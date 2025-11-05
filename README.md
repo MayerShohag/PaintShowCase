@@ -1,0 +1,2 @@
+PaintShowCase is a digital art platform where creativity meets commerce — artists can create, display, and sell their paintings, while users can browse and buy beautiful artworks in a smooth, visually engaging interface. <br/>
+live: https://paintshowcaseresign.netlify.app/

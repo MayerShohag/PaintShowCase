@@ -1,0 +1,1068 @@
+{
+     "products": [
+          {
+               "id": 1,
+               "category": "paintings",
+               "url": "https://images.saatchiart.com/saatchi/394274/art/13107197/12169335-QBSZKSYT-7.jpg",
+               "price": 6755,
+               "painterName": "John Doe",
+               "paintName": "Ce Serait Pour Toujours L'Été 1958 Painting",
+               "location": "Mirpur, Dhaka",
+               "size": "59.1 x 39.4 in",
+               "date" : "old"
+          },
+          {
+               "id": 2,
+               "category": "paintings",
+               "url": "https://images.saatchiart.com/saatchi/574303/art/3918777/2988654-HSC00001-7.jpg",
+               "price": 7180,
+               "painterName": "John Doe",
+               "paintName": "A Thousand Oceans Deep Painting",
+               "location": "Mohakhali, Dhaka",
+               "size": "66 x 44 in",
+               "date": "old"
+          },
+          {
+               "id": 3,
+               "category": "paintings",
+               "url": "https://images.saatchiart.com/saatchi/545449/art/10896403/9958813-SGXJGQFY-7.jpg",
+               "price": 257,
+               "painterName": "John Doe",
+               "paintName": "Spring Rapsody No.3 Painting",
+               "location": "Gulsan, Dhaka",
+               "size": "15.7 x 15.7 in",
+               "date": "new"
+          },
+          {
+               "id": 4,
+               "category": "paintings",
+               "url": "https://images.saatchiart.com/saatchi/1133179/art/8546496/7610348-HSC00001-7.jpg",
+               "price": 1757,
+               "painterName": "John Doe",
+               "paintName": "Dark Waves Painting",
+               "location": "Rajshahi, Rajshahi",
+               "size": "36 x 24 in"
+          },
+          {
+               "id": 5,
+               "category": "paintings",
+               "url": "https://images.saatchiart.com/saatchi/436778/art/8063459/7130461-HSC00001-7.jpg",
+               "price": 1820,
+               "painterName": "John Doe",
+               "paintName": "Two In One Painting",
+               "location": "Gazipur, Dhaka",
+               "size": "40 x 48 in",
+               "date": "new"
+          },
+          {
+               "id": 6,
+               "category": "drawings",
+               "url": "https://images.saatchiart.com/saatchi/313699/art/8081417/7148316-HSC00001-7.jpg",
+               "price": 1550,
+               "painterName": "John Doe",
+               "paintName": "Green Mood 15 Drawing",
+               "location": "Shirajganj, Shirajganj",
+               "size": "11.4 x 16.1 in"
+          },
+          {
+               "id": 7,
+               "category": "drawings",
+               "url": "https://images.saatchiart.com/saatchi/699252/art/12225191/11287389-ARBSTTUM-7.jpg",
+               "price": 334,
+
+               "painterName": "John Doe",
+               "paintName": "Roo Connection Drawing",
+               "location": "Shirajganj, Shirajganj",
+               "size": "10.8 x 14.6 in"
+          },
+          {
+               "id": 8,
+               "category": "drawings",
+               "url": "https://images.saatchiart.com/saatchi/781688/art/5756815/4826615-HSC00001-7.jpg",
+               "price": 876,
+
+               "painterName": "John Doe",
+               "paintName": "Image-Face(Model) Drawing",
+               "location": "Mirpur, Dhaka",
+               "size": "12 x 17.9 in",
+               "date": "new"
+          },
+          {
+               "id": 9,
+               "category": "drawings",
+               "url": "https://images.saatchiart.com/saatchi/19227/art/2512118/1582095-HSC00001-7.jpg",
+               "price": 346,
+
+               "painterName": "John Doe",
+               "paintName": "Mother And Son Drawing",
+               "location": "Gazipur, Dhaka",
+               "size": "8.3 x 11.8 in",
+               "date": "new"
+          },
+          {
+               "id": 10,
+               "category": "drawings",
+               "url": "https://images.saatchiart.com/saatchi/157668/art/9520123/8583225-QDNUIABX-7.jpg",
+               "price": 765,
+
+               "painterName": "John Doe",
+               "paintName": "At The Chapel Drawing",
+               "location": "Gulsan, Dhaka",
+               "size": "23.4 x 16.5 in",
+               "date": "old"
+          },
+          {
+               "id": 11,
+               "category": "mixed-media",
+               "url": "https://images.saatchiart.com/saatchi/25742/art/12210263/11272461-CUDOWEUH-7.jpg",
+               "price": 1550,
+               "painterName": "John Doe",
+               "paintName": "Natural Forces Mixed Media",
+               "location": "Shirajganj, Shirajganj",
+               "size": "25.4 x 37 in",
+               "date": "old"
+          },
+          {
+               "id": 12,
+               "category": "minimalism",
+               "url": "https://images.saatchiart.com/saatchi/655665/art/12292667/11354863-EHWLKAVC-7.jpg",
+               "price": 1150,
+               "painterName": "John Doe",
+               "paintName": "Cozy Mixed Media",
+               "location": "Lalpur, Natore",
+               "size": "14.2 x 18.9 in",
+               "date": "old"
+          },
+          {
+               "id": 13,
+               "category": "mixed-media",
+               "url": "https://images.saatchiart.com/saatchi/349564/art/12263991/11326189-TUBJTWPY-7.jpg",
+               "price": 480,
+
+               "painterName": "John Doe",
+               "paintName": "There You Go Mixed Media",
+               "location": "Latore, Rajshahi",
+               "size": "39.9 x 66.9 in",
+               "date": "new"
+          },
+          {
+               "id": 14,
+               "category": "minimalism",
+               "url": "https://images.saatchiart.com/saatchi/44552/art/9344057/8407165-EIJKBIGJ-7.jpg",
+               "price": 1684,
+               "painterName": "John Doe",
+               "paintName": "Karen Axikyan/Loneliness",
+               "location": "Magura, Khulna",
+               "size": "20.5 x 31 in",
+               "date": "new"
+          },
+          {
+               "id": 15,
+               "category": "recommended",
+               "url": "https://images.saatchiart.com/saatchi/763655/art/3507820/2577707-HSC00001-7.jpg",
+               "price": 9150,
+               "painterName": "John Doe",
+               "paintName": "I'M Lost In A Raimbow (Star Man)",
+               "location": "Gulsan, Dhaka",
+               "size": "66.1 x 13.8 in",
+               "date": "new"
+          },
+          {
+               "id": 16,
+               "category": "minimalism",
+               "url": "https://images.saatchiart.com/saatchi/394274/art/13107197/12169335-QBSZKSYT-7.jpg",
+               "price": 18860,
+               "painterName": "John Doe",
+               "paintName": "Queen (Star Woman) Sculpture",
+               "location": "Latore, Rajshahi",
+               "size": "39.9 x 66.9 in",
+               "date": "new"
+          },
+          {
+               "id": 17,
+               "category": "recommended",
+               "url": "https://images.saatchiart.com/saatchi/313699/art/8081417/7148316-HSC00001-7.jpg",
+               "price": 2450,
+               "painterName": "John Doe",
+               "paintName": "Golden Horizon Painting",
+               "location": "Banani, Dhaka",
+               "size": "48 x 36 in",
+               "date": "new"
+          },
+          {
+               "id": 18,
+               "category": "mixed-media",
+               "url": "https://images.saatchiart.com/saatchi/860142/art/9355469/8418577-LITTNMSD-7.jpg",
+               "price": 3890,
+               "painterName": "John Doe",
+               "paintName": "Morning Silence Painting",
+               "location": "Uttara, Dhaka",
+               "size": "42 x 30 in"
+          },
+          {
+               "id": 19,
+               "category": "recommended",
+               "url": "https://images.saatchiart.com/saatchi/1133179/art/8546496/7610348-HSC00001-7.jpg",
+               "price": 960,
+
+               "painterName": "John Doe",
+               "paintName": "Ocean Breeze Painting",
+               "location": "Rajbari, Dhaka",
+               "size": "30 x 22 in"
+          },
+          {
+               "id": 20,
+               "category": "minimalism",
+               "url": "https://images.saatchiart.com/saatchi/657636/art/5349667/4419481-HSC00001-7.jpg",
+               "price": 6100,
+               "painterName": "John Doe",
+               "paintName": "Eternal Light Painting",
+               "location": "Narsingdi, Dhaka",
+               "size": "50 x 40 in"
+          },
+          {
+               "id": 21,
+               "category": "recommended",
+               "url": "https://images.saatchiart.com/saatchi/805291/art/4582989/3652827-HSC00001-7.jpg",
+               "price": 560,
+
+               "painterName": "John Doe",
+               "paintName": "Human Study Drawing",
+               "location": "Pabna, Rajshahi",
+               "size": "11 x 15 in"
+          },
+          {
+               "id": 22,
+               "category": "mixed-media",
+               "url": "https://images.saatchiart.com/saatchi/352287/art/10624469/9686955-FCZKDAFH-7.jpg",
+               "price": 645,
+
+               "painterName": "John Doe",
+               "paintName": "Line and Flow Drawing",
+               "location": "Mymensingh, Mymensingh",
+               "size": "10 x 14 in"
+          },
+          {
+               "id": 23,
+               "category": "recommended",
+               "url": "https://images.saatchiart.com/saatchi/950379/art/7669333/6737674-HSC00002-7.jpg",
+               "price": 410,
+
+               "painterName": "John Doe",
+               "paintName": "Dream Portrait Drawing",
+               "location": "Comilla, Chattogram",
+               "size": "12 x 18 in"
+          },
+          {
+               "id": 24,
+               "category": "mixed-media",
+               "url": "https://images.saatchiart.com/saatchi/733599/art/13216865/12279001-HHAQTCIG-7.jpg",
+               "price": 320,
+
+               "painterName": "John Doe",
+               "paintName": "Melody Lines Drawing",
+               "location": "Khulna, Khulna",
+               "size": "9 x 12 in"
+          },
+          {
+               "id": 25,
+               "category": "recommended",
+               "url": "https://images.saatchiart.com/saatchi/883072/art/8947069/8010437-JUWIIGDR-7.jpg",
+               "price": 830,
+
+               "painterName": "John Doe",
+               "paintName": "Flowing Emotions Drawing",
+               "location": "Lalbagh, Dhaka",
+               "size": "16 x 20 in"
+          },
+          {
+               "id": 26,
+               "category": "recommended",
+               "url": "https://images.saatchiart.com/saatchi/424579/art/6768719/5838361-LBUQXFWK-7.jpg",
+               "price": 1120,
+               "painterName": "John Doe",
+               "paintName": "Deep Forest Mixed Media",
+               "location": "Natore, Rajshahi",
+               "size": "20 x 30 in"
+          },
+          {
+               "id": 27,
+               "category": "recommended",
+               "url": "https://images.saatchiart.com/saatchi/185414/art/9079589/8142767-RUITREBW-7.jpg",
+               "price": 1345,
+               "painterName": "John Doe",
+               "paintName": "Quiet Sky Mixed Media",
+               "location": "Sirajganj, Rajshahi",
+               "size": "18 x 24 in"
+          },
+          {
+               "id": 28,
+               "category": "newtoold",
+               "url": "https://images.saatchiart.com/saatchi/9021/art/13298921/12361055-WZZGPGQI-7.jpg",
+               "price": 950,
+               "painterName": "John Doe",
+               "paintName": "Cosmic Flow",
+               "location": "Bogra, Rajshahi",
+               "size": "24 x 36 in",
+               "date": "new"
+          },
+          {
+               "id": 29,
+               "category": "newtoold",
+               "url": "https://images.saatchiart.com/saatchi/425707/art/13298599/12360733-RXVURYRH-7.jpg",
+               "price": 870,
+
+               "painterName": "John Doe",
+               "paintName": "Shadows of Time",
+               "location": "Tangail, Dhaka",
+               "size": "22 x 30 in",
+               "date": "new"
+          },
+          {
+               "id": 30,
+               "category": "newtoold",
+               "url": "https://images.saatchiart.com/saatchi/688716/art/13298081/12360215-CFFESJQU-7.jpg",
+               "price": 780,
+
+               "painterName": "John Doe",
+               "paintName": "Beyond Borders",
+               "location": "Pabna, Rajshahi",
+               "size": "19 x 27 in",
+               "date": "new"
+          },
+          {
+               "id": 31,
+               "category": "newtoold",
+               "url": "https://images.saatchiart.com/saatchi/324913/art/13297793/12359927-SBYSJBUI-7.jpg",
+               "price": 2150,
+               "painterName": "John Doe",
+               "paintName": "Spirit of Earth",
+               "location": "Jessore, Khulna",
+               "size": "28 x 15 in",
+               "date": "new"
+          },
+          {
+               "id": 32,
+               "category": "newtoold",
+               "url": "https://images.saatchiart.com/saatchi/763541/art/12845231/11906426-HSC00001-7.jpg",
+               "price": 3580,
+               "painterName": "John Doe",
+               "paintName": "Frozen Echo",
+               "location": "Rangpur, Rangpur",
+               "size": "36 x 12 in",
+               "date": "new"
+          },
+          {
+               "id": 33,
+               "category": "newtoold",
+               "url": "https://images.saatchiart.com/saatchi/791208/art/13297169/12359303-IPVOGHQC-7.jpg",
+               "price": 4900,
+               "painterName": "John Doe",
+               "paintName": "Hope Rising",
+               "location": "Barishal, Barishal",
+               "size": "40 x 20 in",
+               "date": "new"
+          },
+          {
+               "id": 34,
+               "category": "newtoold",
+               "url": "https://images.saatchiart.com/saatchi/298693/art/13297373/12359507-ZKPBEDEV-7.jpg",
+               "price": 5650,
+               "painterName": "John Doe",
+               "paintName": "Silent Stone",
+               "location": "Gazipur, Dhaka",
+               "size": "32 x 16 in",
+               "date": "old"
+          },
+          {
+               "id": 35,
+               "category": "newtoold",
+               "url": "https://images.saatchiart.com/saatchi/600402/art/13296403/12358537-BIOSBYUQ-7.jpg",
+               "price": 6750,
+               "painterName": "John Doe",
+               "paintName": "Balance of Time",
+               "location": "Chittagong, Chattogram",
+               "size": "42 x 18 in",
+               "date": "old"
+          },
+          {
+               "id": 36,
+               "category": "newtoold",
+               "url": "https://images.saatchiart.com/saatchi/298050/art/13296307/12358441-VTQSRXTZ-7.jpg",
+               "price": 3100,
+               "painterName": "John Doe",
+               "paintName": "Whispering Meadow",
+               "location": "Mirpur, Dhaka",
+               "size": "40 x 32 in",
+               "date": "old"
+          },
+          {
+               "id": 37,
+               "category": "newtoold",
+               "url": "https://images.saatchiart.com/saatchi/291153/art/13296287/12358421-VAHANDBM-7.jpg",
+               "price": 2840,
+               "painterName": "John Doe",
+               "paintName": "Mystic Sunset",
+               "location": "Uttara, Dhaka",
+               "size": "45 x 34 in",
+               "date": "old"
+          },
+          {
+               "id": 38,
+               "category": "oldtonew",
+               "url": "https://images.saatchiart.com/saatchi/2877103/art/13292421/12354555-OTFHMAIH-7.jpg",
+               "price": 4250,
+               "painterName": "John Doe",
+               "paintName": "Night in Harmony Painting",
+               "location": "Gulsan, Dhaka",
+               "size": "38 x 28 in"
+          },
+          {
+               "id": 39,
+               "category": "conceptual",
+               "url": "https://images.saatchiart.com/saatchi/2322149/art/13292265/12354399-PHFCYMJZ-7.jpg",
+               "price": 720,
+
+               "painterName": "John Doe",
+               "paintName": "Figure Study Drawing",
+               "location": "Narayanganj, Dhaka",
+               "size": "12 x 17 in"
+          },
+          {
+               "id": 40,
+               "category": "oldtonew",
+               "url": "https://images.saatchiart.com/saatchi/2563013/art/13292143/12354277-TCCGYEIE-7.jpg",
+               "price": 510,
+
+               "painterName": "John Doe",
+               "paintName": "The Thinker Drawing",
+               "location": "Rajshahi, Rajshahi",
+               "size": "10 x 14 in"
+          },
+          {
+               "id": 41,
+               "category": "conceptual",
+               "url": "https://images.saatchiart.com/saatchi/717738/art/13292107/12354241-OBZCCXDX-7.jpg",
+               "price": 1420,
+               "painterName": "John Doe",
+               "paintName": "Urban Chaos Mixed Media",
+               "location": "Khulna, Khulna",
+               "size": "28 x 36 in"
+          },
+          {
+               "id": 42,
+               "category": "oldtonew",
+               "url": "https://images.saatchiart.com/saatchi/1854236/art/13291995/12354129-MDBLZNFI-7.jpg",
+               "price": 8840,
+               "painterName": "John Doe",
+               "paintName": "The Guardian Sculpture",
+               "location": "Dhaka, Dhaka",
+               "size": "40 x 14 in"
+          },
+          {
+               "id": 43,
+               "category": "conceptual",
+               "url": "https://images.saatchiart.com/saatchi/828297/art/13292103/12354237-NLLJRAXK-7.jpg",
+               "price": 11000,
+               "painterName": "John Doe",
+               "paintName": "Soul in Motion Sculpture",
+               "location": "Rajshahi, Rajshahi",
+               "size": "46 x 18 in"
+          },
+          {
+               "id": 44,
+               "category": "oldtonew",
+               "url": "https://images.saatchiart.com/saatchi/878830/art/13291939/12354073-RUCQJIRQ-7.jpg",
+               "price": 5200,
+               "painterName": "John Doe",
+               "paintName": "Hidden Memory Painting",
+               "location": "Lalbagh, Dhaka",
+               "size": "48 x 38 in"
+          },
+          {
+               "id": 45,
+               "category": "conceptual",
+               "url": "https://images.saatchiart.com/saatchi/937994/art/13291841/12353975-JYWQJWBK-7.jpg",
+               "price": 3420,
+               "painterName": "John Doe",
+               "paintName": "Blue Whisper Painting",
+               "location": "Gazipur, Dhaka",
+               "size": "44 x 32 in"
+          },
+          {
+               "id": 46,
+               "category": "oldtonew",
+               "url": "https://images.saatchiart.com/saatchi/2784457/art/13291747/12353881-RYBGYUAW-7.jpg",
+               "price": 480,
+
+               "painterName": "John Doe",
+               "paintName": "Fading Thoughts Drawing",
+               "location": "Barishal, Barishal",
+               "size": "11 x 15 in"
+          },
+          {
+               "id": 47,
+               "category": "oldtonew",
+               "url": "https://images.saatchiart.com/saatchi/735911/art/13291515/12353649-MYJKNIME-7.jpg",
+               "price": 1390,
+               "painterName": "John Doe",
+               "paintName": "Time Collage Mixed Media",
+               "location": "Jessore, Khulna",
+               "size": "22 x 33 in"
+          },
+          {
+               "id": 48,
+               "category": "sculpture",
+               "url": "https://images.saatchiart.com/saatchi/1849866/art/12248697/11310895-XAXABGXY-7.jpg",
+               "price": 140,
+
+               "painterName": "John Doe",
+               "paintName": "Earth Layers Mixed Media",
+               "location": "Sirajganj, Rajshahi",
+               "size": "21 x 29 in"
+          },
+          {
+               "id": 49,
+               "category": "lowtohigh",
+               "url": "https://images.saatchiart.com/saatchi/974296/art/3920510/2990387-HSC00002-7.jpg",
+               "price": 142,
+
+               "painterName": "John Doe",
+               "paintName": "Serene Form Sculpture",
+               "location": "Khulna, Khulna",
+               "size": "38 x 20 in"
+          },
+          {
+               "id": 50,
+               "category": "lowtohigh",
+               "url": "https://images.saatchiart.com/saatchi/1620019/art/7773825/6841839-HSC00002-7.jpg",
+               "price": 149,
+
+               "painterName": "John Doe",
+               "paintName": "Awakening Sculpture",
+               "location": "Rajshahi, Rajshahi",
+               "size": "40 x 22 in"
+          },
+          {
+               "id": 51,
+               "category": "sculpture",
+               "url": "https://images.saatchiart.com/saatchi/974296/art/7751991/6820067-HSC00002-7.jpg",
+               "price": 232,
+
+               "painterName": "John Doe",
+               "paintName": "Silent Forest Painting",
+               "location": "Mohakhali, Dhaka",
+               "size": "42 x 32 in"
+          },
+          {
+               "id": 52,
+               "category": "lowtohigh",
+               "url": "https://images.saatchiart.com/saatchi/837758/art/5506713/4576525-HSC00001-7.jpg",
+               "price": 234,
+
+               "painterName": "John Doe",
+               "paintName": "Morning Vibes Painting",
+               "location": "Banani, Dhaka",
+               "size": "44 x 36 in"
+          },
+          {
+               "id": 53,
+               "category": "sculpture",
+               "url": "https://images.saatchiart.com/saatchi/837758/art/8744671/7808173-HSC00923-7.jpg",
+               "price": 256,
+
+               "painterName": "John Doe",
+               "paintName": "Reflection of Time Painting",
+               "location": "Gazipur, Dhaka",
+               "size": "38 x 28 in"
+          },
+          {
+               "id": 54,
+               "category": "lowtohigh",
+               "url": "https://images.saatchiart.com/saatchi/837758/art/5506727/4576539-HSC00001-7.jpg",
+               "price": 270,
+
+               "painterName": "John Doe",
+               "paintName": "Crimson Bloom Painting",
+               "location": "Mirpur, Dhaka",
+               "size": "46 x 34 in"
+          },
+          {
+               "id": 55,
+               "category": "sculpture",
+               "url": "https://images.saatchiart.com/saatchi/826153/art/11683927/10746167-CTVNPNVN-7.jpg",
+               "price": 310,
+
+               "painterName": "John Doe",
+               "paintName": "Echoes of Silence Painting",
+               "location": "Uttara, Dhaka",
+               "size": "48 x 30 in"
+          },
+          {
+               "id": 56,
+               "category": "lowtohigh",
+               "url": "https://images.saatchiart.com/saatchi/55990/art/11466779/10529033-CECGPLYS-7.jpg",
+               "price": 311,
+
+               "painterName": "John Doe",
+               "paintName": "Gentle Gaze Drawing",
+               "location": "Shirajganj, Shirajganj",
+               "size": "10 x 14 in"
+          },
+          {
+               "id": 57,
+               "category": "sculpture",
+               "url": "https://images.saatchiart.com/saatchi/833929/art/7502947/6571819-HSC00001-7.jpg",
+               "price": 387,
+
+               "painterName": "John Doe",
+               "paintName": "Soft Lines Drawing",
+               "location": "Gulsan, Dhaka",
+               "size": "12 x 18 in"
+          },
+          {
+               "id": 58,
+               "category": "lowtohigh",
+               "url": "https://images.saatchiart.com/saatchi/833929/art/10310735/9373359-YZKXPQMX-7.jpg",
+               "price": 390,
+
+               "painterName": "John Doe",
+               "paintName": "Still Emotion Drawing",
+               "location": "Gazipur, Dhaka",
+               "size": "11 x 16 in"
+          },
+          {
+               "id": 59,
+               "category": "sculpture",
+               "url": "https://images.saatchiart.com/saatchi/719752/art/12783513/11845691-QLWTVQFT-7.jpg",
+               "price": 400,
+
+               "painterName": "John Doe",
+               "paintName": "Thoughtful Mind Drawing",
+               "location": "Rajshahi, Rajshahi",
+               "size": "13 x 19 in"
+          },
+          {
+               "id": 60,
+               "category": "lowtohigh",
+               "url": "https://images.saatchiart.com/saatchi/1555885/art/7607139/6675729-MHCATIKA-7.jpg",
+               "price": 460,
+
+               "painterName": "John Doe",
+               "paintName": "Harmony of Lines Drawing",
+               "location": "Mirpur, Dhaka",
+               "size": "12 x 18 in"
+          },
+          {
+               "id": 61,
+               "category": "lowtohigh",
+               "url": "https://images.saatchiart.com/saatchi/55990/art/10785531/9848001-IHJEHWGE-7.jpg",
+               "price": 570,
+
+               "painterName": "John Doe",
+               "paintName": "Golden Layers Mixed Media",
+               "location": "Natore, Rajshahi",
+               "size": "20 x 30 in"
+          },
+          {
+               "id": 62,
+               "category": "hightolow",
+               "url": "https://images.saatchiart.com/saatchi/2834795/art/13113333/12175471-ZWMUBAFL-7.jpg",
+               "price": 125000,
+               "painterName": "John Doe",
+               "paintName": "Abstract Horizon Mixed Media",
+               "location": "Lalpur, Natore",
+               "size": "18 x 24 in"
+          },
+          {
+               "id": 63,
+               "category": "hightolow",
+               "url": "https://images.saatchiart.com/saatchi/2836031/art/13226891/12289027-WWZHEXDP-7.jpg",
+               "price": 125000,
+               "painterName": "John Doe",
+               "paintName": "Cosmic Touch Mixed Media",
+               "location": "Pabna, Rajshahi",
+               "size": "22 x 28 in"
+          },
+          {
+               "id": 64,
+               "category": "hightolow",
+               "url": "https://images.saatchiart.com/saatchi/2308183/art/10948705/10011115-YMECFEUO-7.jpg",
+               "price": 124000,
+               "painterName": "John Doe",
+               "paintName": "Layers of Silence Mixed Media",
+               "location": "Khulna, Khulna",
+               "size": "24 x 32 in"
+          },
+          {
+               "id": 65,
+               "category": "hightolow",
+               "url": "https://images.saatchiart.com/saatchi/295806/art/11497549/10559803-QCCRTYNZ-7.jpg",
+               "price": 124500,
+               "painterName": "John Doe",
+               "paintName": "Whispered Dreams Mixed Media",
+               "location": "Gazipur, Dhaka",
+               "size": "25 x 35 in"
+          },
+          {
+               "id": 66,
+               "category": "hightolow",
+               "url": "https://images.saatchiart.com/saatchi/2632825/art/12345831/11408027-VLSUNAUP-7.jpg",
+               "price": 123000,
+               "painterName": "John Doe",
+               "paintName": "Spirit Rising Sculpture",
+               "location": "Jessore, Khulna",
+               "size": "28 x 15 in"
+          },
+          {
+               "id": 67,
+               "category": "hightolow",
+               "url": "https://images.saatchiart.com/saatchi/2308183/art/10974283/10036693-PNBKTLPO-7.jpg",
+               "price": 120000,
+               "painterName": "John Doe",
+               "paintName": "Eternal Strength Sculpture",
+               "location": "Rajshahi, Rajshahi",
+               "size": "34 x 18 in"
+          },
+          {
+               "id": 68,
+               "category": "hightolow",
+               "url": "https://images.saatchiart.com/saatchi/2308183/art/11013051/10075345-GZLMZOFK-7.jpg",
+               "price": 120000,
+               "painterName": "John Doe",
+               "paintName": "Wings of Hope Sculpture",
+               "location": "Gazipur, Dhaka",
+               "size": "42 x 20 in"
+          },
+          {
+               "id": 69,
+               "category": "hightolow",
+               "url": "https://images.saatchiart.com/saatchi/2308183/art/11017949/10080243-KJBLCZAG-7.jpg",
+               "price": 100000,
+               "painterName": "John Doe",
+               "paintName": "Celestial Form Sculpture",
+               "location": "Magura, Khulna",
+               "size": "44 x 22 in"
+          },
+          {
+               "id": 70,
+               "category": "hightolow",
+               "url": "https://images.saatchiart.com/saatchi/25939/art/10921453/9983863-PAKUHCZQ-7.jpg",
+               "price": 90000,
+               "painterName": "John Doe",
+               "paintName": "Silent Soul Sculpture",
+               "location": "Rangpur, Rangpur",
+               "size": "48 x 18 in"
+          },
+          {
+               "id": 71,
+               "category": "hightolow",
+               "url": "https://images.saatchiart.com/saatchi/2362733/art/11205825/10268095-PTGWQINC-7.jpg",
+               "price": 85000,
+               "painterName": "John Doe",
+               "paintName": "Midnight Flow Painting",
+               "location": "Gulsan, Dhaka",
+               "size": "42 x 34 in"
+          },
+          {
+               "id": 72,
+               "category": "conceptual",
+               "url": "https://images.saatchiart.com/saatchi/741729/art/10629975/9692461-NBQHPWIG-7.jpg",
+               "price": 2690,
+               "painterName": "John Doe",
+               "paintName": "Endless Sea Painting",
+               "location": "Mirpur, Dhaka",
+               "size": "38 x 26 in"
+          },
+          {
+               "id": 73,
+               "category": "abstract",
+               "url": "https://images.saatchiart.com/saatchi/860142/art/9355469/8418577-LITTNMSD-7.jpg",
+               "price": 3325,
+               "painterName": "John Doe",
+               "paintName": "Winds of Morning Painting",
+               "location": "Banani, Dhaka",
+               "size": "44 x 32 in"
+          },
+          {
+               "id": 74,
+               "category": "abstract",
+               "url": "https://images.saatchiart.com/saatchi/436778/art/8063459/7130461-HSC00001-7.jpg",
+               "price": 4850,
+               "painterName": "John Doe",
+               "paintName": "Golden Path Painting",
+               "location": "Gazipur, Dhaka",
+               "size": "48 x 36 in"
+          },
+          {
+               "id": 75,
+               "category": "abstract",
+               "url": "https://images.saatchiart.com/saatchi/286549/art/359324/186639-PREZHLYR-7.jpg",
+               "price": 4200,
+               "painterName": "John Doe",
+               "paintName": "Blue Forest Painting",
+               "location": "Uttara, Dhaka",
+               "size": "50 x 38 in"
+          },
+          {
+               "id": 76,
+               "category": "abstract",
+               "url": "https://images.saatchiart.com/saatchi/327735/art/9415103/8478211-WXJPMEFA-7.jpg",
+               "price": 660,
+
+               "painterName": "John Doe",
+               "paintName": "Gentle Curves Drawing",
+               "location": "Natore, Rajshahi",
+               "size": "10 x 15 in"
+          },
+          {
+               "id": 77,
+               "category": "abstract",
+               "url": "https://images.saatchiart.com/saatchi/62287/art/2058418/1174640-ZTMCJHMN-7.jpg",
+               "price": 540,
+
+               "painterName": "John Doe",
+               "paintName": "Solitude Drawing",
+               "location": "Gulsan, Dhaka",
+               "size": "11 x 16 in"
+          },
+          {
+               "id": 78,
+               "category": "abstract",
+               "url": "https://images.saatchiart.com/saatchi/69883/art/9446039/8509147-LNIZJLCO-7.jpg",
+               "price": 890,
+
+               "painterName": "John Doe",
+               "paintName": "Quiet Soul Drawing",
+               "location": "Rajshahi, Rajshahi",
+               "size": "13 x 19 in"
+          },
+          {
+               "id": 79,
+               "category": "abstract",
+               "url": "https://images.saatchiart.com/saatchi/693863/art/11955391/11017619-BSWVIQFU-7.jpg",
+               "price": 440,
+
+               "painterName": "John Doe",
+               "paintName": "Lines of Harmony Drawing",
+               "location": "Mirpur, Dhaka",
+               "size": "9 x 12 in"
+          },
+          {
+               "id": 80,
+               "category": "abstract",
+               "url": "https://images.saatchiart.com/saatchi/292357/art/7968041/7035484-VGDHEPFV-7.jpg",
+               "price": 720,
+
+               "painterName": "John Doe",
+               "paintName": "Whispered Sketch Drawing",
+               "location": "Gazipur, Dhaka",
+               "size": "10 x 14 in"
+          },
+          {
+               "id": 81,
+               "category": "contemporary",
+               "url": "https://images.saatchiart.com/saatchi/69883/art/9446039/8509147-LNIZJLCO-7.jpg",
+               "price": 1190,
+               "painterName": "John Doe",
+               "paintName": "Silent Field",
+               "location": "Lalpur, Natore",
+               "size": "20 x 28 in"
+          },
+          {
+               "id": 82,
+               "category": "contemporary",
+               "url": "https://images.saatchiart.com/saatchi/292357/art/7968041/7035484-VGDHEPFV-7.jpg",
+               "price": 1560,
+               "painterName": "John Doe",
+               "paintName": "Eternal Colors",
+               "location": "Sirajganj, Rajshahi",
+               "size": "22 x 30 in"
+          },
+          {
+               "id": 83,
+               "category": "contemporary",
+               "url": "https://images.saatchiart.com/saatchi/397887/art/10073607/9136523-UZVRBUBM-7.jpg",
+               "price": 870,
+
+               "painterName": "John Doe",
+               "paintName": "Conteptorary Pulse",
+               "location": "Khulna, Khulna",
+               "size": "24 x 34 in"
+          },
+          {
+               "id": 84,
+               "category": "contemporary",
+               "url": "https://images.saatchiart.com/saatchi/298693/art/10736009/9798479-ULCJJZFX-7.jpg",
+               "price": 1420,
+               "painterName": "John Doe",
+               "paintName": "Urban Texture",
+               "location": "Rajshahi, Rajshahi",
+               "size": "26 x 36 in"
+          },
+          {
+               "id": 85,
+               "category": "contemporary",
+               "url": "https://images.saatchiart.com/saatchi/4407/art/12758697/11820875-LUQLDUCG-7.jpg",
+               "price": 1150,
+               "painterName": "John Doe",
+               "paintName": "Mystic Horizon Mixed Media",
+               "location": "Mirpur, Dhaka",
+               "size": "24 x 30 in"
+          },
+          {
+               "id": 86,
+               "category": "contemporary",
+               "url": "https://images.saatchiart.com/saatchi/284577/art/12621047/11683235-CPVAGEQA-7.jpg",
+               "price": 3400,
+               "painterName": "John Doe",
+               "paintName": "Spirit Within Sculpture",
+               "location": "Magura, Khulna",
+               "size": "32 x 14 in"
+          },
+          {
+               "id": 87,
+               "category": "contemporary",
+               "url": "https://images.saatchiart.com/saatchi/436778/art/13062191/12124329-IDJZNFOJ-7.jpg",
+               "price": 5120,
+               "painterName": "John Doe",
+               "paintName": "Whispering Stone Sculpture",
+               "location": "Gazipur, Dhaka",
+               "size": "38 x 20 in"
+          },
+          {
+               "id": 88,
+               "category": "figurative",
+               "url": "https://images.saatchiart.com/saatchi/574303/art/3918777/2988654-HSC00001-7.jpg",
+               "price": 6720,
+               "painterName": "John Doe",
+               "paintName": "Boundless Energy Sculpture",
+               "location": "Rajshahi, Rajshahi",
+               "size": "40 x 22 in"
+          },
+          {
+               "id": 89,
+               "category": "modern",
+               "url": "https://images.saatchiart.com/saatchi/337083/art/3427010/2496897-HSC00001-7.jpg",
+               "price": 8940,
+               "painterName": "John Doe",
+               "paintName": "Ancient Dream Sculpture",
+               "location": "Dhaka, Dhaka",
+               "size": "44 x 20 in"
+          },
+          {
+               "id": 90,
+               "category": "modern",
+               "url": "https://images.saatchiart.com/saatchi/805291/art/4582989/3652827-HSC00001-7.jpg",
+               "price": 9780,
+               "painterName": "John Doe",
+               "paintName": "Winds of Creation Sculpture",
+               "location": "Khulna, Khulna",
+               "size": "46 x 24 in"
+          },
+          {
+               "id": 91,
+               "category": "modern",
+               "url": "https://images.saatchiart.com/saatchi/651434/art/9712465/8775565-VZTZFZLG-7.jpg",
+               "price": 3150,
+               "painterName": "John Doe",
+               "paintName": "The Silver Lake Painting",
+               "location": "Gulsan, Dhaka",
+               "size": "42 x 32 in"
+          },
+          {
+               "id": 92,
+               "category": "modern",
+               "url": "https://images.saatchiart.com/saatchi/201553/art/6342397/5412161-HSC00001-7.jpg",
+               "price": 4520,
+               "painterName": "John Doe",
+               "paintName": "Eternal Blue Painting",
+               "location": "Mirpur, Dhaka",
+               "size": "48 x 36 in"
+          },
+          {
+               "id": 93,
+               "category": "modern",
+               "url": "https://images.saatchiart.com/saatchi/580894/art/2870352/1940245-HSC00001-7.jpg",
+               "price": 3860,
+               "painterName": "John Doe",
+               "paintName": "Serenity Painting",
+               "location": "Rajshahi, Rajshahi",
+               "size": "44 x 34 in"
+          },
+          {
+               "id": 94,
+               "category": "modern",
+               "url": "https://images.saatchiart.com/saatchi/185414/art/2341945/1413484-HSC00923-7.jpg",
+               "price": 5980,
+               "painterName": "John Doe",
+               "paintName": "Golden Dawn Painting",
+               "location": "Gazipur, Dhaka",
+               "size": "50 x 40 in"
+          },
+          {
+               "id": 95,
+               "category": "modern",
+               "url": "https://images.saatchiart.com/saatchi/889067/art/8851595/7914964-AYDSFWCJ-7.jpg",
+               "price": 3120,
+               "painterName": "John Doe",
+               "paintName": "Blooming Skies Painting",
+               "location": "Mohakhali, Dhaka",
+               "size": "42 x 32 in"
+          },
+          {
+               "id": 96,
+               "category": "modern",
+               "url": "https://images.saatchiart.com/saatchi/459248/art/3570419/2640305-JXLMPYPG-7.jpg",
+               "price": 760,
+
+               "painterName": "John Doe",
+               "paintName": "Soft Reflection Drawing",
+               "location": "Banani, Dhaka",
+               "size": "12 x 18 in"
+          },
+          {
+               "id": 97,
+               "category": "modern",
+               "url": "https://images.saatchiart.com/saatchi/799341/art/13087119/12148315-HSC00001-7.jpg",
+               "price": 615,
+
+               "painterName": "John Doe",
+               "paintName": "Harmony Sketch Drawing",
+               "location": "Natore, Rajshahi",
+               "size": "10 x 15 in"
+          },
+          {
+               "id": 98,
+               "category": "figurative",
+               "url": "https://images.saatchiart.com/saatchi/335494/art/8406104/7470401-WHSGMYIR-7.jpg",
+               "price": 845,
+
+               "painterName": "John Doe",
+               "paintName": "Flow of Thought Drawing",
+               "location": "Mirpur, Dhaka",
+               "size": "13 x 19 in"
+          },
+          {
+               "id": 99,
+               "category": "figurative",
+               "url": "https://images.saatchiart.com/saatchi/337083/art/3427010/2496897-HSC00001-7.jpg",
+               "price": 420,
+
+               "painterName": "John Doe",
+               "paintName": "Peaceful Mind Drawing",
+               "location": "Gulsan, Dhaka",
+               "size": "11 x 16 in"
+          },
+          {
+               "id": 100,
+               "category": "figurative",
+               "url": "https://images.saatchiart.com/saatchi/511785/art/10749265/9811735-VFAKJSGJ-7.jpg",
+               "price": 690,
+               "painterName": "John Doe",
+               "paintName": "Whispers of Time Drawing",
+               "location": "Gazipur, Dhaka",
+               "size": "12 x 17 in"
+          }
+     ]
+}
