@@ -3,8 +3,6 @@ import Reaction from "./reaction/Reaction";
 import Comment from "./reaction/Comment";
 import CommentSection from "./reaction/CommentSection";
 import MiniProfile from "../../miniprofile/MiniProfile";
-import { MdKeyboardArrowDown } from "react-icons/md";
-import { LiaSortSolid } from "react-icons/lia";
 
 const Products = ({ paint, show, close }) => {
      if (!show) return null;
@@ -82,8 +80,8 @@ const Products = ({ paint, show, close }) => {
                                                        </p>
                                                        <p className="text-2xl font-bold mt-4">
                                                             <span>
-                                                                 Price{" "}
-                                                                 {paint.price}{" "}
+                                                                 Price: ${paint.price}{" "}
+                                                                 <del className="text-sm">${paint.price + 200}</del>
                                                             </span>
                                                        </p>
                                                        <button className="w-full border mt-2 text-xl duration-150 border-transparent border-gray-700 rounded-md py-2 bg-linear-to-r from-white/10 to-white/2 hover:bg-blue-600 cursor-pointer hover:text-white">

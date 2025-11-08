@@ -9,7 +9,7 @@
                "paintName": "Ce Serait Pour Toujours L'Été 1958 Painting",
                "location": "Mirpur, Dhaka",
                "size": "59.1 x 39.4 in",
-               "date" : "old"
+               "date": "old"
           },
           {
                "id": 2,
@@ -41,7 +41,8 @@
                "painterName": "John Doe",
                "paintName": "Dark Waves Painting",
                "location": "Rajshahi, Rajshahi",
-               "size": "36 x 24 in"
+               "size": "36 x 24 in",
+               "date": "old"
           },
           {
                "id": 5,
@@ -62,7 +63,8 @@
                "painterName": "John Doe",
                "paintName": "Green Mood 15 Drawing",
                "location": "Shirajganj, Shirajganj",
-               "size": "11.4 x 16.1 in"
+               "size": "11.4 x 16.1 in",
+               "date": "old"
           },
           {
                "id": 7,
@@ -73,7 +75,8 @@
                "painterName": "John Doe",
                "paintName": "Roo Connection Drawing",
                "location": "Shirajganj, Shirajganj",
-               "size": "10.8 x 14.6 in"
+               "size": "10.8 x 14.6 in",
+               "date": "old"
           },
           {
                "id": 8,
@@ -138,7 +141,6 @@
                "category": "mixed-media",
                "url": "https://images.saatchiart.com/saatchi/349564/art/12263991/11326189-TUBJTWPY-7.jpg",
                "price": 480,
-
                "painterName": "John Doe",
                "paintName": "There You Go Mixed Media",
                "location": "Latore, Rajshahi",
@@ -197,7 +199,8 @@
                "painterName": "John Doe",
                "paintName": "Morning Silence Painting",
                "location": "Uttara, Dhaka",
-               "size": "42 x 30 in"
+               "size": "42 x 30 in",
+               "date": "new"
           },
           {
                "id": 19,
@@ -208,7 +211,8 @@
                "painterName": "John Doe",
                "paintName": "Ocean Breeze Painting",
                "location": "Rajbari, Dhaka",
-               "size": "30 x 22 in"
+               "size": "30 x 22 in",
+               "date": "old"
           },
           {
                "id": 20,
@@ -218,7 +222,8 @@
                "painterName": "John Doe",
                "paintName": "Eternal Light Painting",
                "location": "Narsingdi, Dhaka",
-               "size": "50 x 40 in"
+               "size": "50 x 40 in",
+               "date": "old"
           },
           {
                "id": 21,
@@ -229,7 +234,8 @@
                "painterName": "John Doe",
                "paintName": "Human Study Drawing",
                "location": "Pabna, Rajshahi",
-               "size": "11 x 15 in"
+               "size": "11 x 15 in",
+               "date": "old"
           },
           {
                "id": 22,
@@ -240,7 +246,8 @@
                "painterName": "John Doe",
                "paintName": "Line and Flow Drawing",
                "location": "Mymensingh, Mymensingh",
-               "size": "10 x 14 in"
+               "size": "10 x 14 in",
+               "date": "old"
           },
           {
                "id": 23,
@@ -251,7 +258,8 @@
                "painterName": "John Doe",
                "paintName": "Dream Portrait Drawing",
                "location": "Comilla, Chattogram",
-               "size": "12 x 18 in"
+               "size": "12 x 18 in",
+               "date": "new"
           },
           {
                "id": 24,
@@ -262,7 +270,8 @@
                "painterName": "John Doe",
                "paintName": "Melody Lines Drawing",
                "location": "Khulna, Khulna",
-               "size": "9 x 12 in"
+               "size": "9 x 12 in",
+               "date": "old"
           },
           {
                "id": 25,
@@ -273,7 +282,8 @@
                "painterName": "John Doe",
                "paintName": "Flowing Emotions Drawing",
                "location": "Lalbagh, Dhaka",
-               "size": "16 x 20 in"
+               "size": "16 x 20 in",
+               "date": "old"
           },
           {
                "id": 26,
@@ -283,7 +293,8 @@
                "painterName": "John Doe",
                "paintName": "Deep Forest Mixed Media",
                "location": "Natore, Rajshahi",
-               "size": "20 x 30 in"
+               "size": "20 x 30 in",
+               "date": "old"
           },
           {
                "id": 27,
@@ -293,7 +304,8 @@
                "painterName": "John Doe",
                "paintName": "Quiet Sky Mixed Media",
                "location": "Sirajganj, Rajshahi",
-               "size": "18 x 24 in"
+               "size": "18 x 24 in",
+               "date": "new"
           },
           {
                "id": 28,
@@ -350,7 +362,7 @@
                "paintName": "Frozen Echo",
                "location": "Rangpur, Rangpur",
                "size": "36 x 12 in",
-               "date": "new"
+               "date": "old"
           },
           {
                "id": 33,
@@ -415,7 +427,8 @@
                "painterName": "John Doe",
                "paintName": "Night in Harmony Painting",
                "location": "Gulsan, Dhaka",
-               "size": "38 x 28 in"
+               "size": "38 x 28 in",
+               "date": "new"
           },
           {
                "id": 39,
@@ -426,7 +439,8 @@
                "painterName": "John Doe",
                "paintName": "Figure Study Drawing",
                "location": "Narayanganj, Dhaka",
-               "size": "12 x 17 in"
+               "size": "12 x 17 in",
+               "date": "new"
           },
           {
                "id": 40,
@@ -437,7 +451,8 @@
                "painterName": "John Doe",
                "paintName": "The Thinker Drawing",
                "location": "Rajshahi, Rajshahi",
-               "size": "10 x 14 in"
+               "size": "10 x 14 in",
+               "date": "new"
           },
           {
                "id": 41,
@@ -447,7 +462,8 @@
                "painterName": "John Doe",
                "paintName": "Urban Chaos Mixed Media",
                "location": "Khulna, Khulna",
-               "size": "28 x 36 in"
+               "size": "28 x 36 in",
+               "date": "new"
           },
           {
                "id": 42,
@@ -457,7 +473,8 @@
                "painterName": "John Doe",
                "paintName": "The Guardian Sculpture",
                "location": "Dhaka, Dhaka",
-               "size": "40 x 14 in"
+               "size": "40 x 14 in",
+               "date": "old"
           },
           {
                "id": 43,
@@ -467,7 +484,8 @@
                "painterName": "John Doe",
                "paintName": "Soul in Motion Sculpture",
                "location": "Rajshahi, Rajshahi",
-               "size": "46 x 18 in"
+               "size": "46 x 18 in",
+               "date": "old"
           },
           {
                "id": 44,
@@ -477,7 +495,8 @@
                "painterName": "John Doe",
                "paintName": "Hidden Memory Painting",
                "location": "Lalbagh, Dhaka",
-               "size": "48 x 38 in"
+               "size": "48 x 38 in",
+               "date": "old"
           },
           {
                "id": 45,
@@ -487,7 +506,8 @@
                "painterName": "John Doe",
                "paintName": "Blue Whisper Painting",
                "location": "Gazipur, Dhaka",
-               "size": "44 x 32 in"
+               "size": "44 x 32 in",
+               "date": "old"
           },
           {
                "id": 46,
@@ -498,7 +518,8 @@
                "painterName": "John Doe",
                "paintName": "Fading Thoughts Drawing",
                "location": "Barishal, Barishal",
-               "size": "11 x 15 in"
+               "size": "11 x 15 in",
+               "date": "new"
           },
           {
                "id": 47,
@@ -508,7 +529,8 @@
                "painterName": "John Doe",
                "paintName": "Time Collage Mixed Media",
                "location": "Jessore, Khulna",
-               "size": "22 x 33 in"
+               "size": "22 x 33 in",
+               "date": "new"
           },
           {
                "id": 48,
@@ -519,7 +541,8 @@
                "painterName": "John Doe",
                "paintName": "Earth Layers Mixed Media",
                "location": "Sirajganj, Rajshahi",
-               "size": "21 x 29 in"
+               "size": "21 x 29 in",
+               "date": "new"
           },
           {
                "id": 49,
@@ -530,7 +553,8 @@
                "painterName": "John Doe",
                "paintName": "Serene Form Sculpture",
                "location": "Khulna, Khulna",
-               "size": "38 x 20 in"
+               "size": "38 x 20 in",
+               "date": "new"
           },
           {
                "id": 50,
@@ -541,7 +565,8 @@
                "painterName": "John Doe",
                "paintName": "Awakening Sculpture",
                "location": "Rajshahi, Rajshahi",
-               "size": "40 x 22 in"
+               "size": "40 x 22 in",
+               "date": "old"
           },
           {
                "id": 51,
@@ -552,7 +577,8 @@
                "painterName": "John Doe",
                "paintName": "Silent Forest Painting",
                "location": "Mohakhali, Dhaka",
-               "size": "42 x 32 in"
+               "size": "42 x 32 in",
+               "date": "old"
           },
           {
                "id": 52,
@@ -563,7 +589,8 @@
                "painterName": "John Doe",
                "paintName": "Morning Vibes Painting",
                "location": "Banani, Dhaka",
-               "size": "44 x 36 in"
+               "size": "44 x 36 in",
+               "date": "old"
           },
           {
                "id": 53,
@@ -574,7 +601,8 @@
                "painterName": "John Doe",
                "paintName": "Reflection of Time Painting",
                "location": "Gazipur, Dhaka",
-               "size": "38 x 28 in"
+               "size": "38 x 28 in",
+               "date": "old"
           },
           {
                "id": 54,
@@ -585,7 +613,8 @@
                "painterName": "John Doe",
                "paintName": "Crimson Bloom Painting",
                "location": "Mirpur, Dhaka",
-               "size": "46 x 34 in"
+               "size": "46 x 34 in",
+               "date": "new"
           },
           {
                "id": 55,
@@ -596,7 +625,8 @@
                "painterName": "John Doe",
                "paintName": "Echoes of Silence Painting",
                "location": "Uttara, Dhaka",
-               "size": "48 x 30 in"
+               "size": "48 x 30 in",
+               "date": "new"
           },
           {
                "id": 56,
@@ -607,7 +637,8 @@
                "painterName": "John Doe",
                "paintName": "Gentle Gaze Drawing",
                "location": "Shirajganj, Shirajganj",
-               "size": "10 x 14 in"
+               "size": "10 x 14 in",
+               "date": "new"
           },
           {
                "id": 57,
@@ -618,7 +649,8 @@
                "painterName": "John Doe",
                "paintName": "Soft Lines Drawing",
                "location": "Gulsan, Dhaka",
-               "size": "12 x 18 in"
+               "size": "12 x 18 in",
+               "date": "new"
           },
           {
                "id": 58,
@@ -629,7 +661,8 @@
                "painterName": "John Doe",
                "paintName": "Still Emotion Drawing",
                "location": "Gazipur, Dhaka",
-               "size": "11 x 16 in"
+               "size": "11 x 16 in",
+               "date": "new"
           },
           {
                "id": 59,
@@ -640,7 +673,8 @@
                "painterName": "John Doe",
                "paintName": "Thoughtful Mind Drawing",
                "location": "Rajshahi, Rajshahi",
-               "size": "13 x 19 in"
+               "size": "13 x 19 in",
+               "date": "new"
           },
           {
                "id": 60,
@@ -651,7 +685,8 @@
                "painterName": "John Doe",
                "paintName": "Harmony of Lines Drawing",
                "location": "Mirpur, Dhaka",
-               "size": "12 x 18 in"
+               "size": "12 x 18 in",
+               "date": "old"
           },
           {
                "id": 61,
@@ -662,7 +697,8 @@
                "painterName": "John Doe",
                "paintName": "Golden Layers Mixed Media",
                "location": "Natore, Rajshahi",
-               "size": "20 x 30 in"
+               "size": "20 x 30 in",
+               "date": "old"
           },
           {
                "id": 62,
@@ -672,7 +708,8 @@
                "painterName": "John Doe",
                "paintName": "Abstract Horizon Mixed Media",
                "location": "Lalpur, Natore",
-               "size": "18 x 24 in"
+               "size": "18 x 24 in",
+               "date": "old"
           },
           {
                "id": 63,
@@ -682,7 +719,8 @@
                "painterName": "John Doe",
                "paintName": "Cosmic Touch Mixed Media",
                "location": "Pabna, Rajshahi",
-               "size": "22 x 28 in"
+               "size": "22 x 28 in",
+               "date": "old"
           },
           {
                "id": 64,
@@ -692,7 +730,8 @@
                "painterName": "John Doe",
                "paintName": "Layers of Silence Mixed Media",
                "location": "Khulna, Khulna",
-               "size": "24 x 32 in"
+               "size": "24 x 32 in",
+               "date": "old"
           },
           {
                "id": 65,
@@ -702,7 +741,8 @@
                "painterName": "John Doe",
                "paintName": "Whispered Dreams Mixed Media",
                "location": "Gazipur, Dhaka",
-               "size": "25 x 35 in"
+               "size": "25 x 35 in",
+               "date": "new"
           },
           {
                "id": 66,
@@ -712,7 +752,8 @@
                "painterName": "John Doe",
                "paintName": "Spirit Rising Sculpture",
                "location": "Jessore, Khulna",
-               "size": "28 x 15 in"
+               "size": "28 x 15 in",
+               "date": "old"
           },
           {
                "id": 67,
@@ -722,7 +763,8 @@
                "painterName": "John Doe",
                "paintName": "Eternal Strength Sculpture",
                "location": "Rajshahi, Rajshahi",
-               "size": "34 x 18 in"
+               "size": "34 x 18 in",
+               "date": "old"
           },
           {
                "id": 68,
@@ -732,7 +774,8 @@
                "painterName": "John Doe",
                "paintName": "Wings of Hope Sculpture",
                "location": "Gazipur, Dhaka",
-               "size": "42 x 20 in"
+               "size": "42 x 20 in",
+               "date": "new"
           },
           {
                "id": 69,
@@ -742,7 +785,8 @@
                "painterName": "John Doe",
                "paintName": "Celestial Form Sculpture",
                "location": "Magura, Khulna",
-               "size": "44 x 22 in"
+               "size": "44 x 22 in",
+               "date": "new"
           },
           {
                "id": 70,
@@ -752,7 +796,8 @@
                "painterName": "John Doe",
                "paintName": "Silent Soul Sculpture",
                "location": "Rangpur, Rangpur",
-               "size": "48 x 18 in"
+               "size": "48 x 18 in",
+               "date": "new"
           },
           {
                "id": 71,
@@ -762,7 +807,8 @@
                "painterName": "John Doe",
                "paintName": "Midnight Flow Painting",
                "location": "Gulsan, Dhaka",
-               "size": "42 x 34 in"
+               "size": "42 x 34 in",
+               "date": "new"
           },
           {
                "id": 72,
@@ -772,7 +818,8 @@
                "painterName": "John Doe",
                "paintName": "Endless Sea Painting",
                "location": "Mirpur, Dhaka",
-               "size": "38 x 26 in"
+               "size": "38 x 26 in",
+               "date": "new"
           },
           {
                "id": 73,
@@ -782,7 +829,8 @@
                "painterName": "John Doe",
                "paintName": "Winds of Morning Painting",
                "location": "Banani, Dhaka",
-               "size": "44 x 32 in"
+               "size": "44 x 32 in",
+               "date": "old"
           },
           {
                "id": 74,
@@ -792,7 +840,8 @@
                "painterName": "John Doe",
                "paintName": "Golden Path Painting",
                "location": "Gazipur, Dhaka",
-               "size": "48 x 36 in"
+               "size": "48 x 36 in",
+               "date": "old"
           },
           {
                "id": 75,
@@ -802,7 +851,8 @@
                "painterName": "John Doe",
                "paintName": "Blue Forest Painting",
                "location": "Uttara, Dhaka",
-               "size": "50 x 38 in"
+               "size": "50 x 38 in",
+               "date": "old"
           },
           {
                "id": 76,
@@ -813,7 +863,8 @@
                "painterName": "John Doe",
                "paintName": "Gentle Curves Drawing",
                "location": "Natore, Rajshahi",
-               "size": "10 x 15 in"
+               "size": "10 x 15 in",
+               "date": "old"
           },
           {
                "id": 77,
@@ -824,7 +875,8 @@
                "painterName": "John Doe",
                "paintName": "Solitude Drawing",
                "location": "Gulsan, Dhaka",
-               "size": "11 x 16 in"
+               "size": "11 x 16 in",
+               "date": "new"
           },
           {
                "id": 78,
@@ -835,7 +887,8 @@
                "painterName": "John Doe",
                "paintName": "Quiet Soul Drawing",
                "location": "Rajshahi, Rajshahi",
-               "size": "13 x 19 in"
+               "size": "13 x 19 in",
+               "date": "new"
           },
           {
                "id": 79,
@@ -846,7 +899,8 @@
                "painterName": "John Doe",
                "paintName": "Lines of Harmony Drawing",
                "location": "Mirpur, Dhaka",
-               "size": "9 x 12 in"
+               "size": "9 x 12 in",
+               "date": "new"
           },
           {
                "id": 80,
@@ -857,7 +911,8 @@
                "painterName": "John Doe",
                "paintName": "Whispered Sketch Drawing",
                "location": "Gazipur, Dhaka",
-               "size": "10 x 14 in"
+               "size": "10 x 14 in",
+               "date": "new"
           },
           {
                "id": 81,
@@ -867,7 +922,8 @@
                "painterName": "John Doe",
                "paintName": "Silent Field",
                "location": "Lalpur, Natore",
-               "size": "20 x 28 in"
+               "size": "20 x 28 in",
+               "date": "old"
           },
           {
                "id": 82,
@@ -877,7 +933,8 @@
                "painterName": "John Doe",
                "paintName": "Eternal Colors",
                "location": "Sirajganj, Rajshahi",
-               "size": "22 x 30 in"
+               "size": "22 x 30 in",
+               "date": "old"
           },
           {
                "id": 83,
@@ -888,7 +945,8 @@
                "painterName": "John Doe",
                "paintName": "Conteptorary Pulse",
                "location": "Khulna, Khulna",
-               "size": "24 x 34 in"
+               "size": "24 x 34 in",
+               "date": "old"
           },
           {
                "id": 84,
@@ -898,7 +956,8 @@
                "painterName": "John Doe",
                "paintName": "Urban Texture",
                "location": "Rajshahi, Rajshahi",
-               "size": "26 x 36 in"
+               "size": "26 x 36 in",
+               "date": "old"
           },
           {
                "id": 85,
@@ -908,7 +967,8 @@
                "painterName": "John Doe",
                "paintName": "Mystic Horizon Mixed Media",
                "location": "Mirpur, Dhaka",
-               "size": "24 x 30 in"
+               "size": "24 x 30 in",
+               "date": "new"
           },
           {
                "id": 86,
@@ -918,7 +978,8 @@
                "painterName": "John Doe",
                "paintName": "Spirit Within Sculpture",
                "location": "Magura, Khulna",
-               "size": "32 x 14 in"
+               "size": "32 x 14 in",
+               "date": "new"
           },
           {
                "id": 87,
@@ -928,7 +989,8 @@
                "painterName": "John Doe",
                "paintName": "Whispering Stone Sculpture",
                "location": "Gazipur, Dhaka",
-               "size": "38 x 20 in"
+               "size": "38 x 20 in",
+               "date": "new"
           },
           {
                "id": 88,
@@ -938,7 +1000,8 @@
                "painterName": "John Doe",
                "paintName": "Boundless Energy Sculpture",
                "location": "Rajshahi, Rajshahi",
-               "size": "40 x 22 in"
+               "size": "40 x 22 in",
+               "date": "old"
           },
           {
                "id": 89,
@@ -948,7 +1011,8 @@
                "painterName": "John Doe",
                "paintName": "Ancient Dream Sculpture",
                "location": "Dhaka, Dhaka",
-               "size": "44 x 20 in"
+               "size": "44 x 20 in",
+               "date": "old"
           },
           {
                "id": 90,
@@ -958,7 +1022,8 @@
                "painterName": "John Doe",
                "paintName": "Winds of Creation Sculpture",
                "location": "Khulna, Khulna",
-               "size": "46 x 24 in"
+               "size": "46 x 24 in",
+               "date": "new"
           },
           {
                "id": 91,
@@ -968,7 +1033,8 @@
                "painterName": "John Doe",
                "paintName": "The Silver Lake Painting",
                "location": "Gulsan, Dhaka",
-               "size": "42 x 32 in"
+               "size": "42 x 32 in",
+               "date": "new"
           },
           {
                "id": 92,
@@ -978,7 +1044,8 @@
                "painterName": "John Doe",
                "paintName": "Eternal Blue Painting",
                "location": "Mirpur, Dhaka",
-               "size": "48 x 36 in"
+               "size": "48 x 36 in",
+               "date": "new"
           },
           {
                "id": 93,
@@ -988,7 +1055,8 @@
                "painterName": "John Doe",
                "paintName": "Serenity Painting",
                "location": "Rajshahi, Rajshahi",
-               "size": "44 x 34 in"
+               "size": "44 x 34 in",
+               "date": "old"
           },
           {
                "id": 94,
@@ -998,7 +1066,8 @@
                "painterName": "John Doe",
                "paintName": "Golden Dawn Painting",
                "location": "Gazipur, Dhaka",
-               "size": "50 x 40 in"
+               "size": "50 x 40 in",
+               "date": "old"
           },
           {
                "id": 95,
@@ -1008,7 +1077,8 @@
                "painterName": "John Doe",
                "paintName": "Blooming Skies Painting",
                "location": "Mohakhali, Dhaka",
-               "size": "42 x 32 in"
+               "size": "42 x 32 in",
+               "date": "old"
           },
           {
                "id": 96,
@@ -1019,7 +1089,8 @@
                "painterName": "John Doe",
                "paintName": "Soft Reflection Drawing",
                "location": "Banani, Dhaka",
-               "size": "12 x 18 in"
+               "size": "12 x 18 in",
+               "date": "old"
           },
           {
                "id": 97,
@@ -1030,7 +1101,8 @@
                "painterName": "John Doe",
                "paintName": "Harmony Sketch Drawing",
                "location": "Natore, Rajshahi",
-               "size": "10 x 15 in"
+               "size": "10 x 15 in",
+               "date": "new"
           },
           {
                "id": 98,
@@ -1041,7 +1113,8 @@
                "painterName": "John Doe",
                "paintName": "Flow of Thought Drawing",
                "location": "Mirpur, Dhaka",
-               "size": "13 x 19 in"
+               "size": "13 x 19 in",
+               "date": "new"
           },
           {
                "id": 99,
@@ -1052,7 +1125,8 @@
                "painterName": "John Doe",
                "paintName": "Peaceful Mind Drawing",
                "location": "Gulsan, Dhaka",
-               "size": "11 x 16 in"
+               "size": "11 x 16 in",
+               "date": "new"
           },
           {
                "id": 100,
@@ -1062,7 +1136,8 @@
                "painterName": "John Doe",
                "paintName": "Whispers of Time Drawing",
                "location": "Gazipur, Dhaka",
-               "size": "12 x 17 in"
+               "size": "12 x 17 in",
+               "date": "old"
           }
      ]
 }

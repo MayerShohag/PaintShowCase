@@ -11,33 +11,36 @@ const Frame = ({ products }) => {
      };
      return (
           <>
-               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-dense gap-5 px-5 py-5 lg:px-20 lg:py-10">
+               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-dense gap-5 p-3 md:p-4 lg:px-20 lg:py-10">
                     {products.map((paint) => (
                          <div
                               title={paint.paintName}
                               key={paint.id}
-                              className="w-full h-full relative hover:border-white/50 hover:shadow-[inset_-8px_-8px_20px_white]/10 rounded-xl border p-3 border-gray-700 hover:scale-105 duration-150 transition-all"
+                              className="w-full h-full relative hover:border-white/50 hover:shadow-[inset_-8px_-8px_20px_white]/10 rounded-xl border p-1.5 md:p-2 lg:p-3 border-gray-700 hover:scale-105 duration-150 transition-all"
                          >
                               <img
-                                   className="w-full h-100 object-cover rounded-md "
+                                   className="w-full h-50 md:h-70 lg:h-100 object-cover md:rounded-md rounded-lg "
                                    src={paint.url}
                                    alt={paint.paintName}
                               />
                               <div className="mt-1 text-nowrap overflow-hidden">
                                    <div className="flex items-center justify-between">
-                                        <span className="text-2xl font-bold">
+                                        <span className="md:text-2xl text-lg font-bold">
                                              {paint.painterName}
                                         </span>
-                                        <span className="text-xl font-bold">
-                                             ${paint.price}
+                                        <span className="md:text-xl text-lg font-bold">
+                                             ${paint.price}{" "}
+                                             <del className="text-[13px] font-normal">
+                                                  ${paint.price + 200}
+                                             </del>
                                         </span>
                                    </div>
-                                   <div className="my-1">
-                                        <span className="text-xl font-semibold">
+                                   <div className="md:my-1">
+                                        <span className="md:text-xl text-lg font-semibold">
                                              {paint.paintName}
                                         </span>
                                    </div>
-                                   <div className="flex items-center justify-between">
+                                   <div className="flex items-center mt-2 md:mt-0 justify-between">
                                         <span className="text-sm text-white/50">
                                              {paint.location}
                                         </span>

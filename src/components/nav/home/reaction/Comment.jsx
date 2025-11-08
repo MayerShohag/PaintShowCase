@@ -18,7 +18,7 @@ const Comment = ({ paint }) => {
                          />
                     </div>
                     <div className="">
-                         <button className="border border-gray-700 hover:bg-white/10 transition-all duration-150 cursor-pointer hover:border-transparent text-xl font-bold h-full  w-full px-3 rounded-xl">
+                         <button className="border border-gray-700 hover:bg-white/10 transition-all duration-150 cursor-pointer hover:border-transparent text-lg font-bold h-full  w-full px-3 rounded-xl">
                               Post
                          </button>
                     </div>

@@ -39,8 +39,10 @@ const Header = () => {
                                    to="/notifications"
                                    className="flex hover:ring transition-all duration-200 hover:ring-gray-700 hover:text-white items-center gap-1 bg-[#1C1F26] p-2 rounded-2xl"
                               >
-                                   <GoBell className="text-2xl" />
-                                   <span className="md:text-xl text-sm">0</span>
+                                   <GoBell className="text-lg md:text-2xl" />
+                                   <span className=" md:text-xl text-sm">
+                                        0
+                                   </span>
                               </Link>
                          </div>
 
@@ -50,7 +52,7 @@ const Header = () => {
                                    to="/cart"
                                    className="flex hover:ring transition-all duration-200 hover:ring-gray-700 hover:text-white items-center gap-1 bg-[#1C1F26] p-2 rounded-2xl"
                               >
-                                   <IoCartOutline className="text-2xl" />
+                                   <IoCartOutline className="text-lg md:text-2xl" />
                                    <span className="md:text-xl text-sm">0</span>
                               </Link>
                          </div>
@@ -65,7 +67,7 @@ const Header = () => {
                                    </span>
                                    <img
                                         src="/public/vite.svg"
-                                        className="w-8 h-8 object-cover object-top rounded-lg "
+                                        className="w-6 h-6 md:w-8 md:h-8 object-cover object-top rounded-lg "
                                         alt="user profile"
                                    />
                               </Link>
