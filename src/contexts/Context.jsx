@@ -9,14 +9,16 @@ export default function Context({ children }) {
      }, []);
 
      const getProducts = async () => {
-          const res = await fetch(`http://localhost:3000/products`);
+          const res = await fetch(
+               `https://691cb4a03aaeed735c91d7ac.mockapi.io/paintshowcase/products`
+          );
           const data = await res.json();
           setProducts(data);
      };
 
      const getFilterProducts = async (category) => {
           const res = await fetch(
-               `http://localhost:3000/products?category=${category}`
+               `https://691cb4a03aaeed735c91d7ac.mockapi.io/paintshowcase/products?category=${category}`
           );
           const data = await res.json();
           setProducts(data);
@@ -28,12 +30,16 @@ export default function Context({ children }) {
                setProducts(lowToHigh);
           }
      };
+     const [showModal, setShowModal] = useState(false);
      return (
           <OwnContext.Provider
                value={{
                     products,
                     getProducts,
                     getFilterProducts,
+                    setProducts,
+                    showModal,
+                    setShowModal,
                }}
           >
                {children}

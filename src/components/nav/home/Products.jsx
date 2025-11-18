@@ -33,12 +33,12 @@ const Products = ({ paint, show, close }) => {
                                                        " " +
                                                        paint.size
                                                   }
-                                                  className="w-full object-contain object-top-left h-full rounded-xl cursor-zoom-in"
+                                                  className="w-full object-contain object-top-left h-full rounded-xl"
                                                   alt={paint.paintName}
                                              />
                                         </div>
 
-                                        <Reaction />
+                                        <Reaction paint={paint}/>
                                         <hr className="my-5 border-0.5 border-gray-700 " />
                                         <Comment paint={paint} />
 

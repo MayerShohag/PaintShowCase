@@ -12,7 +12,7 @@ const Aside = () => {
      return (
           <>
                <div>
-                    <div className="lg:text-2xl md:text-xl flex items-center gap-1 font-semibold p-2">
+                    <div className="lg:text-2xl text-xl flex items-center gap-1 font-semibold p-2">
                          <CiFilter />
                          <span>Filter Paintings</span>
                     </div>

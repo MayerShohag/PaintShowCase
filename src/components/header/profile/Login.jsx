@@ -1,0 +1,74 @@
+import React from "react";
+import { Link } from "react-router";
+
+const Login = ({ setIsHaveAccount, isHaveAccount }) => {
+     return (
+          <div className="border border-gray-700 rounded-xl p-3">
+               <div className="p-2 text-center">
+                    <h1 className="md:leading-3 leading-0 font-[Audiowide] text-[10px] md:text-[15px]">
+                         <span className="text-xl font-bold md:text-3xl md:font-bold">
+                              Paint
+                         </span>
+                         <br />
+                         ShowCase
+                    </h1>
+                    <p className="pt-3 text-lg text-gray-500 ">
+                         Log in to{" "}
+                         <span className="font-[Audiowide]">PaintShowCase</span>
+                    </p>
+               </div>
+               <hr className=" border-gray-700" />
+               <form action="">
+                    <div className="flex flex-col w-90 gap-2">
+                         <div className="mt-3">
+                              <label htmlFor="email">
+                                   Username or email address
+                              </label>
+                              <br />
+                              <input
+                                   type="text"
+                                   id="email"
+                                   placeholder="example@gmail.com"
+                                   required
+                                   className="border w-full border-gray-700 rounded-lg p-3 text-xl"
+                              />
+                         </div>
+                         <div>
+                              <label htmlFor="password">Password</label>
+                              <br />
+                              <input
+                                   type="password"
+                                   placeholder="Password"
+                                   id="password"
+                                   required
+                                   className="border w-full border-gray-700 rounded-lg p-3 text-xl"
+                              />
+                         </div>
+                         <input
+                              type="submit"
+                              value="Log in"
+                              className="border w-full hover:bg-gray-800 cursor-pointer border-gray-700 rounded-lg p-3"
+                         />
+                    </div>
+
+                    <div className="text-center pt-2 flex flex-col">
+                         <div>
+                              <Link to="/forgetten-password">
+                                   forgotten password?
+                              </Link>{" "}
+                              <span
+                                   className="cursor-pointer hover:underline text-blue-500"
+                                   onClick={() =>
+                                        setIsHaveAccount(!isHaveAccount)
+                                   }
+                              >
+                                   Sign up
+                              </span>
+                         </div>
+                    </div>
+               </form>
+          </div>
+     );
+};
+
+export default Login;

@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Products from "./Products";
+import Reaction from "./reaction/Reaction";
+import { OwnContext } from "../../../contexts/Context";
 
 const Frame = ({ products }) => {
      const [selectPaint, setSelectPaint] = useState(null);
-     const [showModal, setShowModal] = useState(false);
+     const { showModal, setShowModal } = useContext(OwnContext);
 
      const handleSelectPaint = (paint) => {
           setSelectPaint(paint);
@@ -11,50 +13,22 @@ const Frame = ({ products }) => {
      };
      return (
           <>
-               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-dense gap-5 p-3 md:p-4 lg:px-20 lg:py-10">
+               <div className="grid grid-cols-1 md:grid-cols-2 container mx-auto lg:grid-cols-3 grid-flow-dense lg:gap-5 md:gap-2 gap-2 p-1 pt-2 md:p-4 lg:px-20 lg:py-10">
                     {products.map((paint) => (
                          <div
-                              title={paint.paintName}
+                              title={`Name: ${paint.paintName}\nArtist Name: ${paint.painterName}\nPrice: $${paint.price}\nSize: ${paint.size}`}
                               key={paint.id}
-                              className="w-full h-full relative hover:border-white/50 hover:shadow-[inset_-8px_-8px_20px_white]/10 rounded-xl border p-1.5 md:p-2 lg:p-3 border-gray-700 hover:scale-105 duration-150 transition-all"
+                              className="w-full h-full relative rounded-b-[30px] rounded-t-[17px] lg:rounded-[17px_17px_33px_33px] border border-b-0 p-0 border-gray-700 lg:hover:scale-103 duration-150 transition-all"
                          >
                               <img
-                                   className="w-full h-50 md:h-70 lg:h-100 object-cover md:rounded-md rounded-lg "
+                                   className="w-full h-80 mb-2 cursor-zoom-in md:h-70 lg:h-100 object-cover rounded-t-2xl lg:rounded-t-2xl"
                                    src={paint.url}
                                    alt={paint.paintName}
-                              />
-                              <div className="mt-1 text-nowrap overflow-hidden">
-                                   <div className="flex items-center justify-between">
-                                        <span className="md:text-2xl text-lg font-bold">
-                                             {paint.painterName}
-                                        </span>
-                                        <span className="md:text-xl text-lg font-bold">
-                                             ${paint.price}{" "}
-                                             <del className="text-[13px] font-normal">
-                                                  ${paint.price + 200}
-                                             </del>
-                                        </span>
-                                   </div>
-                                   <div className="md:my-1">
-                                        <span className="md:text-xl text-lg font-semibold">
-                                             {paint.paintName}
-                                        </span>
-                                   </div>
-                                   <div className="flex items-center mt-2 md:mt-0 justify-between">
-                                        <span className="text-sm text-white/50">
-                                             {paint.location}
-                                        </span>
-                                        <span className="text-sm text-white/50">
-                                             {paint.size}
-                                        </span>
-                                   </div>
-                              </div>
-                              <button
                                    onClick={() => handleSelectPaint(paint)}
-                                   className="w-full border mt-2 transition-all duration-150 hover:shadow-[inset_3px_3px_10px_white]/10 hover:text-white/80 cursor-pointer py-1 rounded-md border-gray-700"
-                              >
-                                   View Details
-                              </button>
+                              />
+                              <div>
+                                   <Reaction />
+                              </div>
                          </div>
                     ))}
                </div>

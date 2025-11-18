@@ -1,17 +1,47 @@
-import { CiSearch } from "react-icons/ci";
 import { GoBell } from "react-icons/go";
 import { IoCartOutline } from "react-icons/io5";
 import { Link } from "react-router";
+import Search from "./Search";
+import { CiFilter, CiUser } from "react-icons/ci";
+import { useState } from "react";
+import Aside from "../aside/Aside";
+import { HiMiniXMark } from "react-icons/hi2";
 const Header = () => {
+     const [hamburger, setHamburger] = useState(false);
+     let content = hamburger ? (
+          <div className="rounded-r-xl w-50 absolute h-130 overflow-auto scrollbar-none left-0 top-13 bg-gray-900">
+               <Aside />
+          </div>
+     ) : null;
+     const handleHamburger = () => {
+          setHamburger((prev) => !prev);
+     };
+
      return (
           <>
                <section className="grid grid-cols-2 py-2 px-3 border-b border-gray-700 backdrop-blur-3xl">
-                    <div className="flex items-center gap-5">
+                    <div className="flex items-center gap-3">
+                         <div className="md:hidden">
+                              {content}
+                              {hamburger ? (
+                                   <HiMiniXMark
+                                        title="Cancel Filter"
+                                        onClick={handleHamburger}
+                                        className="text-2xl cursor-pointer"
+                                   />
+                              ) : (
+                                   <CiFilter
+                                        title="Filter Painting"
+                                        onClick={handleHamburger}
+                                        className="text-2xl cursor-pointer"
+                                   />
+                              )}
+                         </div>
                          <div className="w-fit">
                               <h1 className="md:leading-3 leading-0 text-[10px] md:text-[15px]">
-                                   <Link
+                                   <a
                                         title="PaintShowCase"
-                                        to="/"
+                                        href="/"
                                         className="font-[Audiowide]"
                                    >
                                         <span className="text-xl font-bold md:text-3xl md:font-bold">
@@ -19,17 +49,10 @@ const Header = () => {
                                         </span>
                                         <br />
                                         ShowCase
-                                   </Link>
+                                   </a>
                               </h1>
                          </div>
-                         <div className="md:w-90 md:h-12 hidden transition-all duration-200 md:flex md:items-center md:gap-2 md:px-3 md:bg-[#1C1F26] md:border md:border-transparent md:rounded-2xl focus-within:ring focus-within:ring-gray-700 focus-within:shadow-[3px_3px_5px_black]">
-                              <CiSearch className="text-3xl text-gray-500" />
-                              <input
-                                   type="search"
-                                   className="h-full w-full text-xl outline-none placeholder:text-xl placeholder:text-gray-500 placeholder:font-normal "
-                                   placeholder="Search your loved paint"
-                              />
-                         </div>
+                         <Search />
                     </div>
 
                     <div className="flex gap-2 items-center justify-end">
@@ -56,20 +79,13 @@ const Header = () => {
                                    <span className="md:text-xl text-sm">0</span>
                               </Link>
                          </div>
-                         <div className="profile">
+                         <div className="profile relative">
                               <Link
                                    to="/profile"
                                    title="Profile"
-                                   className="flex hover:ring transition-all duration-200 hover:ring-gray-700 hover:text-white items-center gap-2 bg-[#1C1F26] px-2 py-1.5 rounded-2xl"
+                                   className="flex hover:ring cursor-pointer transition-all duration-200 hover:ring-gray-700 hover:text-white items-center gap-2 bg-[#1C1F26] p-2 rounded-2xl"
                               >
-                                   <span className="md:text-xl hidden font-semibold sm:block">
-                                        SK
-                                   </span>
-                                   <img
-                                        src="/public/vite.svg"
-                                        className="w-6 h-6 md:w-8 md:h-8 object-cover object-top rounded-lg "
-                                        alt="user profile"
-                                   />
+                                   <CiUser className="text-lg md:text-2xl" />
                               </Link>
                          </div>
                     </div>
