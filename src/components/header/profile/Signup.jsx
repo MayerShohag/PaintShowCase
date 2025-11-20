@@ -1,6 +1,72 @@
-import React from "react";
+import { useState } from "react";
+const Signup = ({ isHaveAccount, setIsHaveAccount }) => {
+     const [name, setName] = useState("");
+     const [username, setUsername] = useState("");
+     const [formEmail, setFormEmail] = useState("");
+     const [date, setDate] = useState("");
+     const [signPassword, setSignPassword] = useState("");
+     const [profilePicture, setProfilePicture] = useState("");
+     const [gender, setGender] = useState("");
+     const [termsCheck, setTermsCheck] = useState(false);
+     let random = Math.random() * 20;
+     const dateTime = new Date();
+     function getTime() {
+          switch (dateTime.getDay()) {
+               case 0:
+                    return `Sunday`;
+               case 1:
+                    return `Monday`;
+               case 2:
+                    return `Tuesday`;
+               case 3:
+                    return `Wednesday`;
+               case 4:
+                    return `Thursday`;
+               case 5:
+                    return `Friday`;
+               case 6:
+                    return `Saturday`;
 
-const Signup = ({isHaveAccount, setIsHaveAccount}) => {
+               default:
+                    break;
+          }
+     }
+     const handlePostSubmit = async (e) => {
+          const postData = {
+               name,
+               username,
+               email: formEmail,
+               avatar: profilePicture,
+               followers: random,
+               following: random,
+               dateOfBirth: date,
+               bio: "hello friends",
+               location: "Mohakhali, Dhaka",
+               createdAt: `${dateTime.getDate()} ${getTime()} ${dateTime.getFullYear()}`,
+               is_verified: false,
+               password: signPassword,
+               gender,
+          };
+          e.preventDefault();
+          await fetch(
+               `https://691cb4a03aaeed735c91d7ac.mockapi.io/paintshowcase/user`,
+               {
+                    method: "POST",
+                    body: JSON.stringify(postData),
+                    headers: {
+                         "content-type": "application/json",
+                    },
+               }
+          );
+          setName("");
+          setUsername("");
+          setFormEmail("");
+          setDate("");
+          setSignPassword("");
+          setProfilePicture("");
+          setGender("");
+          setTermsCheck(false);
+     };
      return (
           <>
                <div className="border border-gray-700 p-3 rounded-xl">
@@ -17,7 +83,10 @@ const Signup = ({isHaveAccount, setIsHaveAccount}) => {
                          </p>
                     </div>
                     <hr className=" border-gray-700" />
-                    <form className="flex flex-col gap-3 mt-2">
+                    <form
+                         className="flex flex-col gap-3 mt-2"
+                         onSubmit={(e) => handlePostSubmit(e)}
+                    >
                          <div className="flex gap-2">
                               <div>
                                    <label htmlFor="name">Name</label>
@@ -25,6 +94,10 @@ const Signup = ({isHaveAccount, setIsHaveAccount}) => {
                                    <input
                                         type="text"
                                         id="name"
+                                        value={name}
+                                        onChange={(e) =>
+                                             setName(e.target.value)
+                                        }
                                         placeholder="name"
                                         required
                                         className="border border-gray-700 rounded-lg px-2 py-1"
@@ -37,6 +110,10 @@ const Signup = ({isHaveAccount, setIsHaveAccount}) => {
                                         type="text"
                                         placeholder="username"
                                         id="username"
+                                        value={username}
+                                        onChange={(e) =>
+                                             setUsername(e.target.value)
+                                        }
                                         required
                                         className="border border-gray-700 rounded-lg px-2 py-1"
                                    />
@@ -48,48 +125,62 @@ const Signup = ({isHaveAccount, setIsHaveAccount}) => {
                               <input
                                    type="email"
                                    required
+                                   value={formEmail}
+                                   onChange={(e) =>
+                                        setFormEmail(e.target.value)
+                                   }
                                    className="border border-gray-700 rounded-lg w-full px-2 py-1"
                                    placeholder="example@gmail.com"
                                    id="mail"
                               />
                          </div>
                          <div className="">
-                              <div>
-                                   <label htmlFor="dob">Date of Birth</label>
-                                   <br />
-                                   <input
-                                        type="date"
-                                        id="dob"
-                                        required
-                                        className="border w-full border-gray-700 rounded-lg px-2 py-1"
-                                   />
-                              </div>
+                              <label htmlFor="dob">Date of Birth</label>
+                              <br />
+                              <input
+                                   type="date"
+                                   id="dob"
+                                   value={date}
+                                   onChange={(e) => setDate(e.target.value)}
+                                   required
+                                   className="border w-full border-gray-700 rounded-lg px-2 py-1"
+                              />
                          </div>
                          <div className="flex gap-2">
                               <div>
-                                   <label htmlFor="password">Password</label>
-                                   <br />
-                                   <input
-                                        type="password"
-                                        name=""
-                                        id="password"
-                                        required
-                                        placeholder="password"
-                                        className="border border-gray-700 rounded-lg px-2 py-1"
-                                   />
-                              </div>
-                              <div>
-                                   <label htmlFor="password">
-                                        Confirm password
+                                   <label htmlFor="signPassword">
+                                        Password
                                    </label>
                                    <br />
                                    <input
                                         type="password"
                                         name=""
-                                        id="password"
+                                        id="signPassword"
                                         required
-                                        placeholder="confirm password"
+                                        min={10}
+                                        value={signPassword}
+                                        onChange={(e) =>
+                                             setSignPassword(e.target.value)
+                                        }
+                                        placeholder="password"
                                         className="border border-gray-700 rounded-lg px-2 py-1"
+                                   />
+                              </div>
+                              <div>
+                                   <label htmlFor="profilePicture">
+                                        Profile Picture
+                                   </label>
+                                   <br />
+                                   <input
+                                        type="file"
+                                        id="profilePicture"
+                                        value={profilePicture}
+                                        onChange={(e) =>
+                                             setProfilePicture(e.target.value)
+                                        }
+                                        required
+                                        placeholder="Upload photo"
+                                        className="border w-full border-gray-700 rounded-lg px-2 py-1"
                                    />
                               </div>
                          </div>
@@ -100,6 +191,10 @@ const Signup = ({isHaveAccount, setIsHaveAccount}) => {
                                         <input
                                              type="radio"
                                              name="gender"
+                                             value="Male"
+                                             onChange={(e) =>
+                                                  setGender(e.target.checked)
+                                             }
                                              id="male"
                                         />
                                         <label htmlFor="male">Male</label>
@@ -108,6 +203,10 @@ const Signup = ({isHaveAccount, setIsHaveAccount}) => {
                                         <input
                                              type="radio"
                                              name="gender"
+                                             value="Female"
+                                             onChange={(e) =>
+                                                  setGender(e.target.checked)
+                                             }
                                              id="female"
                                         />
                                         <label htmlFor="female">Female</label>
@@ -116,6 +215,10 @@ const Signup = ({isHaveAccount, setIsHaveAccount}) => {
                                         <input
                                              type="radio"
                                              name="gender"
+                                             value="LGBT"
+                                             onChange={(e) =>
+                                                  setGender(e.target.checked)
+                                             }
                                              id="custom"
                                         />
                                         <label htmlFor="custom">Custom</label>
@@ -123,7 +226,12 @@ const Signup = ({isHaveAccount, setIsHaveAccount}) => {
                               </div>
                          </div>
                          <div className="flex items-center gap-1">
-                              <input type="checkbox" id="termsAndCondition" />
+                              <input
+                                   type="checkbox"
+                                   checked={termsCheck}
+                                   onChange={() => setTermsCheck(!termsCheck)}
+                                   id="termsAndCondition"
+                              />
                               <label htmlFor="termsAndCondition">
                                    Terms and condition
                               </label>

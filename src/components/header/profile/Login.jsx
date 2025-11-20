@@ -1,7 +1,29 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router";
 
-const Login = ({ setIsHaveAccount, isHaveAccount }) => {
+const Login = ({ setIsHaveAccount, isHaveAccount, setIsLogin }) => {
+     const [passUsername, setPassUsername] = useState([]);
+     const [email, setEmail] = useState("");
+     const [password, setPassword] = useState("");
+
+     const handleSubmit = (e) => {
+          e.preventDefault();
+          passUsername.map((users) => {
+               if (email === users.email && password === users.password) {
+                    setIsLogin(true);
+                    console.log(`login true`);
+               } else {
+                    console.log(`login false`);
+               }
+          });
+     };
+     useEffect(() => {
+          fetch(
+               `https://691cb4a03aaeed735c91d7ac.mockapi.io/paintshowcase/user`
+          )
+               .then((res) => res.json())
+               .then((data) => setPassUsername(data));
+     }, []);
      return (
           <div className="border border-gray-700 rounded-xl p-3">
                <div className="p-2 text-center">
@@ -18,7 +40,7 @@ const Login = ({ setIsHaveAccount, isHaveAccount }) => {
                     </p>
                </div>
                <hr className=" border-gray-700" />
-               <form action="">
+               <form onSubmit={(e) => handleSubmit(e)}>
                     <div className="flex flex-col w-90 gap-2">
                          <div className="mt-3">
                               <label htmlFor="email">
@@ -26,7 +48,9 @@ const Login = ({ setIsHaveAccount, isHaveAccount }) => {
                               </label>
                               <br />
                               <input
-                                   type="text"
+                                   type="email"
+                                   value={email}
+                                   onChange={(e) => setEmail(e.target.value)}
                                    id="email"
                                    placeholder="example@gmail.com"
                                    required
@@ -38,6 +62,8 @@ const Login = ({ setIsHaveAccount, isHaveAccount }) => {
                               <br />
                               <input
                                    type="password"
+                                   value={password}
+                                   onChange={(e) => setPassword(e.target.value)}
                                    placeholder="Password"
                                    id="password"
                                    required

@@ -22,7 +22,7 @@ const Search = () => {
      useEffect(() => {
           if (input.length === 0) setSearchData([]);
           const timer = setTimeout(() => {
-               fetch(`http://localhost:3000/products?paintName_like=${input}`)
+               fetch(`https://691cb4a03aaeed735c91d7ac.mockapi.io/paintshowcase/products?paintName=${input}`)
                     .then((res) => res.json())
                     .then((data) => setSearchData(data));
           }, 300);
