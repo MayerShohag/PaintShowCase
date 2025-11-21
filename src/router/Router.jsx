@@ -12,15 +12,26 @@ import Post from "../components/post/Post";
 import Products from "../components/nav/home/Products";
 import NotificationsToday from "../components/header/notifications/NotificationsToday";
 import Cart from "../components/header/cart/Cart";
-
+import ProfileDetails from "../components/header/profile/ProfileDetails";
+import Loading from "../Loading";
+import NotFound from "../NotFound";
 
 export const router = createBrowserRouter([
      {
           path: "/",
           element: <Root />,
           children: [
-               { path: "/", index: true, element: <Home />},
-               { path: "/profile", element: <Profile /> },
+               { path: "/", index: true, element: <Home /> },
+               {
+                    path: "/profile",
+                    element: <Profile />,
+                    children: [
+                         {
+                              path: "/profile",
+                              element: <ProfileDetails />,
+                         },
+                    ],
+               },
                {
                     path: "/notifications",
                     element: <Notifications />,
@@ -31,7 +42,7 @@ export const router = createBrowserRouter([
                          },
                     ],
                },
-               { path: "/cart", element: <Cart/> },
+               { path: "/cart", element: <Cart /> },
                { path: "/exhibitions", element: <Exhibitions /> },
                { path: "/collaborations", element: <Collaborations /> },
                { path: "/inspirations", element: <Inspiration /> },
@@ -41,11 +52,7 @@ export const router = createBrowserRouter([
                { path: "/products", element: <Products /> },
                {
                     path: "/*",
-                    element: (
-                         <h1 className="h-screen text-6xl font-bold flex items-center justify-center">
-                              This page is not available!
-                         </h1>
-                    ),
+                    element: <NotFound />,
                },
           ],
      },

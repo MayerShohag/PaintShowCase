@@ -1,28 +1,37 @@
-import { useState } from "react";
+import { Suspense, lazy, useContext, useState } from "react";
 import Login from "./Login";
-import Signup from "./Signup";
-import ProfileDetails from "./ProfileDetails";
+import { LoginContext } from "../../../contexts/ProfileContext";
+import ProfileDetails from "../profile/ProfileDetails";
 
 const Profile = () => {
      const [isHaveAccount, setIsHaveAccount] = useState(true);
-     const [isLogin, setIsLogin] = useState(false);
+     const Signup = lazy(() => import("./Signup"));
+     const { isLogin, handleLogin, handleLogout, setUser } =
+          useContext(LoginContext);
      return (
           <>
                {isLogin ? (
-                    <ProfileDetails setIsLogin={setIsLogin}/>
+                    <ProfileDetails handleLogout={handleLogout} />
                ) : (
                     <div className="flex justify-center items-center h-screen">
                          {isHaveAccount ? (
                               <Login
                                    isHaveAccount={isHaveAccount}
                                    setIsHaveAccount={setIsHaveAccount}
-                                   setIsLogin={setIsLogin}
+                                   handleLogin={handleLogin}
+                                   setUser={setUser}
                               />
                          ) : (
-                              <Signup
-                                   isHaveAccount={isHaveAccount}
-                                   setIsHaveAccount={setIsHaveAccount}
-                              />
+                              <Suspense
+                                   fallback={
+                                        <span className="loading loading-infinity loading-xl"></span>
+                                   }
+                              >
+                                   <Signup
+                                        isHaveAccount={isHaveAccount}
+                                        setIsHaveAccount={setIsHaveAccount}
+                                   />
+                              </Suspense>
                          )}
                     </div>
                )}

@@ -1,53 +1,73 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { GoEye, GoEyeClosed } from "react-icons/go";
 const Signup = ({ isHaveAccount, setIsHaveAccount }) => {
+     const dateTime = new Date();
      const [name, setName] = useState("");
      const [username, setUsername] = useState("");
      const [formEmail, setFormEmail] = useState("");
      const [date, setDate] = useState("");
      const [signPassword, setSignPassword] = useState("");
-     const [profilePicture, setProfilePicture] = useState("");
      const [gender, setGender] = useState("");
      const [termsCheck, setTermsCheck] = useState(false);
-     let random = Math.random() * 20;
-     const dateTime = new Date();
-     function getTime() {
-          switch (dateTime.getDay()) {
-               case 0:
-                    return `Sunday`;
-               case 1:
-                    return `Monday`;
-               case 2:
-                    return `Tuesday`;
-               case 3:
-                    return `Wednesday`;
-               case 4:
-                    return `Thursday`;
-               case 5:
-                    return `Friday`;
-               case 6:
-                    return `Saturday`;
+     const [location, setLocation] = useState({});
+     const [showPass, setShowPass] = useState(false);
+     const [profilePicture, setProfilePicture] = useState(null);
 
-               default:
-                    break;
+     const fileUpload = async () => {
+          if (!profilePicture) return alert("Please select a profile picture.");
+          const formData = new FormData();
+          formData.append("file", profilePicture);
+          formData.append("upload_preset", "paintshowcase");
+          const url = `https://api.cloudinary.com/v1_1/dua5xqaek/image/upload`;
+          const response = await fetch(url, {
+               method: "POST",
+               body: formData,
+          });
+          const data = await response.json();
+          return data.secure_url;
+     };
+
+     useEffect(() => {
+          navigator.geolocation.getCurrentPosition(async (position) => {
+               let latitute = position.coords.latitude;
+               let longtitute = position.coords.longitude;
+               const url = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitute}&longitude=${longtitute}`;
+               const response = await fetch(url);
+               const data = await response.json();
+               setLocation(data);
+          });
+     }, []);
+
+     const termUsername = (e) => {
+          let username = e.target.value;
+          const validUsername = /^[a-z0-9_.-]*$/;
+          if (validUsername.test(username)) {
+               setUsername(username);
+          } else {
+               const filteredUsername = username.replace(/[^a-z0-9_.-]/g, "");
+               setUsername(filteredUsername);
           }
-     }
+     };
+
      const handlePostSubmit = async (e) => {
+          e.preventDefault();
+          const imageUrl = await fileUpload();
           const postData = {
                name,
-               username,
+               username: `${username}`,
                email: formEmail,
-               avatar: profilePicture,
-               followers: random,
-               following: random,
+               avatar: imageUrl,
+               followers: 0,
+               following: 0,
                dateOfBirth: date,
                bio: "hello friends",
-               location: "Mohakhali, Dhaka",
-               createdAt: `${dateTime.getDate()} ${getTime()} ${dateTime.getFullYear()}`,
+               datetime: dateTime.toLocaleTimeString(),
+               location: `${location.locality}, ${location.city}, ${location.countryName}`,
+               createdAt: `${dateTime.toDateString()}`,
                is_verified: false,
                password: signPassword,
                gender,
           };
-          e.preventDefault();
           await fetch(
                `https://691cb4a03aaeed735c91d7ac.mockapi.io/paintshowcase/user`,
                {
@@ -63,7 +83,7 @@ const Signup = ({ isHaveAccount, setIsHaveAccount }) => {
           setFormEmail("");
           setDate("");
           setSignPassword("");
-          setProfilePicture("");
+          setProfilePicture(null);
           setGender("");
           setTermsCheck(false);
      };
@@ -85,7 +105,9 @@ const Signup = ({ isHaveAccount, setIsHaveAccount }) => {
                     <hr className=" border-gray-700" />
                     <form
                          className="flex flex-col gap-3 mt-2"
-                         onSubmit={(e) => handlePostSubmit(e)}
+                         onSubmit={(e) => {
+                              handlePostSubmit(e);
+                         }}
                     >
                          <div className="flex gap-2">
                               <div>
@@ -111,9 +133,7 @@ const Signup = ({ isHaveAccount, setIsHaveAccount }) => {
                                         placeholder="username"
                                         id="username"
                                         value={username}
-                                        onChange={(e) =>
-                                             setUsername(e.target.value)
-                                        }
+                                        onChange={(e) => termUsername(e)}
                                         required
                                         className="border border-gray-700 rounded-lg px-2 py-1"
                                    />
@@ -148,16 +168,40 @@ const Signup = ({ isHaveAccount, setIsHaveAccount }) => {
                          </div>
                          <div className="flex gap-2">
                               <div>
-                                   <label htmlFor="signPassword">
-                                        Password
-                                   </label>
-                                   <br />
+                                   <div className="flex items-center gap-1">
+                                        <label
+                                             htmlFor="signPassword"
+                                             className="flex items-center"
+                                        >
+                                             <span>Password</span>
+                                        </label>
+                                        <div className="hover:bg-white/20 p-1 rounded-full">
+                                             {showPass ? (
+                                                  <GoEye
+                                                       onClick={() =>
+                                                            setShowPass(
+                                                                 !showPass
+                                                            )
+                                                       }
+                                                  />
+                                             ) : (
+                                                  <GoEyeClosed
+                                                       onClick={() =>
+                                                            setShowPass(
+                                                                 !showPass
+                                                            )
+                                                       }
+                                                  />
+                                             )}
+                                        </div>
+                                   </div>
                                    <input
-                                        type="password"
+                                        type={showPass ? "text" : "password"}
                                         name=""
                                         id="signPassword"
                                         required
-                                        min={10}
+                                        minLength={8}
+                                        maxLength={255}
                                         value={signPassword}
                                         onChange={(e) =>
                                              setSignPassword(e.target.value)
@@ -174,10 +218,12 @@ const Signup = ({ isHaveAccount, setIsHaveAccount }) => {
                                    <input
                                         type="file"
                                         id="profilePicture"
-                                        value={profilePicture}
                                         onChange={(e) =>
-                                             setProfilePicture(e.target.value)
+                                             setProfilePicture(
+                                                  e.target.files[0]
+                                             )
                                         }
+                                        accept="image/*"
                                         required
                                         placeholder="Upload photo"
                                         className="border w-full border-gray-700 rounded-lg px-2 py-1"
@@ -191,9 +237,11 @@ const Signup = ({ isHaveAccount, setIsHaveAccount }) => {
                                         <input
                                              type="radio"
                                              name="gender"
+                                             required
                                              value="Male"
+                                             checked={gender === "Male"}
                                              onChange={(e) =>
-                                                  setGender(e.target.checked)
+                                                  setGender(e.target.value)
                                              }
                                              id="male"
                                         />
@@ -203,9 +251,11 @@ const Signup = ({ isHaveAccount, setIsHaveAccount }) => {
                                         <input
                                              type="radio"
                                              name="gender"
+                                             required
                                              value="Female"
+                                             checked={gender === "Female"}
                                              onChange={(e) =>
-                                                  setGender(e.target.checked)
+                                                  setGender(e.target.value)
                                              }
                                              id="female"
                                         />
@@ -214,10 +264,12 @@ const Signup = ({ isHaveAccount, setIsHaveAccount }) => {
                                    <div className="flex gap-1 items-center accent-green-400">
                                         <input
                                              type="radio"
+                                             required
                                              name="gender"
-                                             value="LGBT"
+                                             value="Custom"
+                                             checked={gender === "Custom"}
                                              onChange={(e) =>
-                                                  setGender(e.target.checked)
+                                                  setGender(e.target.value)
                                              }
                                              id="custom"
                                         />
@@ -229,6 +281,7 @@ const Signup = ({ isHaveAccount, setIsHaveAccount }) => {
                               <input
                                    type="checkbox"
                                    checked={termsCheck}
+                                   required
                                    onChange={() => setTermsCheck(!termsCheck)}
                                    id="termsAndCondition"
                               />

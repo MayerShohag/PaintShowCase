@@ -3,11 +3,13 @@ import { IoCartOutline } from "react-icons/io5";
 import { Link } from "react-router";
 import Search from "./Search";
 import { CiFilter, CiUser } from "react-icons/ci";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Aside from "../aside/Aside";
 import { HiMiniXMark } from "react-icons/hi2";
+import { LoginContext } from "../../contexts/ProfileContext";
 const Header = () => {
      const [hamburger, setHamburger] = useState(false);
+     const { user, isLogin } = useContext(LoginContext);
      let content = hamburger ? (
           <div className="rounded-r-xl w-50 absolute h-130 overflow-auto scrollbar-none left-0 top-13 bg-gray-900">
                <Aside />
@@ -39,9 +41,9 @@ const Header = () => {
                          </div>
                          <div className="w-fit">
                               <h1 className="md:leading-3 leading-0 text-[10px] md:text-[15px]">
-                                   <a
+                                   <Link
                                         title="PaintShowCase"
-                                        href="/"
+                                        to="/"
                                         className="font-[Audiowide]"
                                    >
                                         <span className="text-xl font-bold md:text-3xl md:font-bold">
@@ -49,7 +51,7 @@ const Header = () => {
                                         </span>
                                         <br />
                                         ShowCase
-                                   </a>
+                                   </Link>
                               </h1>
                          </div>
                          <Search />
@@ -60,7 +62,7 @@ const Header = () => {
                               <Link
                                    title="Notifications"
                                    to="/notifications"
-                                   className="flex hover:ring transition-all duration-200 hover:ring-gray-700 hover:text-white items-center gap-1 bg-[#1C1F26] p-2 rounded-2xl"
+                                   className="flex hover:ring transition-all duration-200 hover:ring-gray-700 hover:text-white items-center gap-1 bg-[#1C1F26] p-2 rounded-xl"
                               >
                                    <GoBell className="text-lg md:text-2xl" />
                                    <span className=" md:text-xl text-sm">
@@ -73,7 +75,7 @@ const Header = () => {
                               <Link
                                    title="Cart"
                                    to="/cart"
-                                   className="flex hover:ring transition-all duration-200 hover:ring-gray-700 hover:text-white items-center gap-1 bg-[#1C1F26] p-2 rounded-2xl"
+                                   className="flex hover:ring transition-all duration-200 hover:ring-gray-700 hover:text-white items-center gap-1 bg-[#1C1F26] p-2 rounded-xl"
                               >
                                    <IoCartOutline className="text-lg md:text-2xl" />
                                    <span className="md:text-xl text-sm">0</span>
@@ -83,9 +85,18 @@ const Header = () => {
                               <Link
                                    to="/profile"
                                    title="Profile"
-                                   className="flex hover:ring cursor-pointer transition-all duration-200 hover:ring-gray-700 hover:text-white items-center gap-2 bg-[#1C1F26] p-2 rounded-2xl"
+                                   className="flex hover:ring cursor-pointer transition-all duration-200 hover:ring-gray-700 hover:text-white items-center gap-2 bg-[#1C1F26] p-1 rounded-xl"
                               >
-                                   <CiUser className="text-lg md:text-2xl" />
+                                   {isLogin ? (
+                                        <img
+                                             src={user.avatar}
+                                             className="w-9 h-9 rounded-lg object-cover"
+                                             alt={user.name}
+                                             title={user.name}
+                                        />
+                                   ) : (
+                                        <CiUser className="text-lg md:text-2xl lg:text-[34px]" />
+                                   )}
                               </Link>
                          </div>
                     </div>

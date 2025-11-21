@@ -1,16 +1,22 @@
 import { useEffect, useState } from "react";
+import { GoEye, GoEyeClosed } from "react-icons/go";
 import { Link } from "react-router";
 
-const Login = ({ setIsHaveAccount, isHaveAccount, setIsLogin }) => {
+const Login = ({ setIsHaveAccount, isHaveAccount, handleLogin, setUser }) => {
      const [passUsername, setPassUsername] = useState([]);
      const [email, setEmail] = useState("");
      const [password, setPassword] = useState("");
+     const [showPass, setShowPass] = useState(false);
 
      const handleSubmit = (e) => {
           e.preventDefault();
           passUsername.map((users) => {
-               if (email === users.email && password === users.password) {
-                    setIsLogin(true);
+               if (
+                    email === users.email ||
+                    (email === users.username && password === users.password)
+               ) {
+                    handleLogin(users);
+                    setUser(users);
                     console.log(`login true`);
                } else {
                     console.log(`login false`);
@@ -43,12 +49,12 @@ const Login = ({ setIsHaveAccount, isHaveAccount, setIsLogin }) => {
                <form onSubmit={(e) => handleSubmit(e)}>
                     <div className="flex flex-col w-90 gap-2">
                          <div className="mt-3">
-                              <label htmlFor="email">
+                              <label htmlFor="text">
                                    Username or email address
                               </label>
                               <br />
                               <input
-                                   type="email"
+                                   type="text"
                                    value={email}
                                    onChange={(e) => setEmail(e.target.value)}
                                    id="email"
@@ -58,10 +64,26 @@ const Login = ({ setIsHaveAccount, isHaveAccount, setIsLogin }) => {
                               />
                          </div>
                          <div>
-                              <label htmlFor="password">Password</label>
-                              <br />
+                              <div className="flex items-center gap-1">
+                                   <label htmlFor="password">Password</label>
+                                   <div className="hover:bg-white/20 p-1 rounded-full">
+                                        {showPass ? (
+                                             <GoEye
+                                                  onClick={() =>
+                                                       setShowPass(!showPass)
+                                                  }
+                                             />
+                                        ) : (
+                                             <GoEyeClosed
+                                                  onClick={() =>
+                                                       setShowPass(!showPass)
+                                                  }
+                                             />
+                                        )}
+                                   </div>
+                              </div>
                               <input
-                                   type="password"
+                                   type={showPass ? "text" : "password"}
                                    value={password}
                                    onChange={(e) => setPassword(e.target.value)}
                                    placeholder="Password"
