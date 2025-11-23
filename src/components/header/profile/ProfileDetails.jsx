@@ -27,8 +27,8 @@ import { LoginContext } from "../../../contexts/ProfileContext";
 const ProfileDetails = ({ handleLogout }) => {
      const { user } = useContext(LoginContext);
      return (
-          <div className="grid grid-cols-12 gap-5 my-5 mb-20 container mx-auto px-50">
-               <div className="col-span-4 border border-gray-700 rounded-2xl p-2">
+          <div className="grid grid-cols-12 gap-5 my-5 mb-20 container mx-auto px-5 lg:px-50">
+               <div className="lg:col-span-4 col-span-5 border border-gray-700 rounded-2xl p-2">
                     <div className="flex cursor-pointer items-center hover:bg-white/5 px-2 py-0 rounded-xl justify-between">
                          <div className="flex items-center gap-2">
                               <img
@@ -149,22 +149,24 @@ const ProfileDetails = ({ handleLogout }) => {
                          <span>Log Out</span>
                     </div>
                </div>
-               <div className="col-span-8 border border-gray-700 rounded-2xl p-3">
-                    <div className="relative h-70">
+               <div className="lg:col-span-8 col-span-7 border border-gray-700 rounded-2xl p-3">
+                    <div className="h-70">
                          <img
                               className="w-full h-full cursor-pointer hover:contrast-120 rounded-xl object-cover"
                               src={user.avatar}
                               title={user.name}
                               alt={user.name}
                          />
-                         <div className="flex gap-4 px-5 ">
-                              <img
-                                   src={user.avatar}
-                                   alt={user.name}
-                                   title={user.username}
-                                   className="w-50 h-50 rounded-full cursor-pointer absolute top-50 hover:contrast-120 shadow-2xl border-5 object-cover "
-                              />
-                              <div className="w-10/12 ml-55 mt-2">
+                         <div className="grid grid-cols-12 items-center gap-4 px-5 ">
+                              <div className="col-span-4 h-40 relative">
+                                   <img
+                                        src={user.avatar}
+                                        alt={user.name}
+                                        title={user.username}
+                                        className="w-50 h-50 absolute -top-20 rounded-full cursor-pointer hover:contrast-120 shadow-2xl border-5 object-cover "
+                                   />
+                              </div>
+                              <div className="col-span-8">
                                    <div className="flex items-center justify-between w-full">
                                         <div>
                                              <h1 className="text-4xl font-bold">

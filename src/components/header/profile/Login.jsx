@@ -31,7 +31,7 @@ const Login = ({ setIsHaveAccount, isHaveAccount, handleLogin, setUser }) => {
                .then((data) => setPassUsername(data));
      }, []);
      return (
-          <div className="border border-gray-700 rounded-xl p-3">
+          <div className="border border-gray-700 rounded-xl p-3 w-md mx-5">
                <div className="p-2 text-center">
                     <h1 className="md:leading-3 leading-0 font-[Audiowide] text-[10px] md:text-[15px]">
                          <span className="text-xl font-bold md:text-3xl md:font-bold">
@@ -47,7 +47,7 @@ const Login = ({ setIsHaveAccount, isHaveAccount, handleLogin, setUser }) => {
                </div>
                <hr className=" border-gray-700" />
                <form onSubmit={(e) => handleSubmit(e)}>
-                    <div className="flex flex-col w-90 gap-2">
+                    <div className="flex flex-col gap-2">
                          <div className="mt-3">
                               <label htmlFor="text">
                                    Username or email address

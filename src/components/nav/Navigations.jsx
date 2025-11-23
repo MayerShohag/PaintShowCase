@@ -69,16 +69,6 @@ const Navigations = () => {
                                         <span className="md:text-lg text-sm">Services</span>
                                    </div>
                               </Link>
-                              <Link
-                                   title="about"
-                                   to="/about"
-                                   className="border flex items-center focus-within:bg-white/10 focus-within:text-white cursor-pointer hover:border-transparent border-gray-700 font-medium hover:text-white px-3 py-1.5 hover:bg-white/10 transition-all duration-150 rounded-lg"
-                              >
-                                   <div className="flex items-center gap-1">
-                                        <MdGroups className="md:text-lg text-sm" />
-                                        <span className="md:text-lg text-sm">About</span>
-                                   </div>
-                              </Link>
                          </div>
                     </div>
                </div>

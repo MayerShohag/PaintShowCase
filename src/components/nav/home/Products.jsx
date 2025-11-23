@@ -3,8 +3,11 @@ import Reaction from "./reaction/Reaction";
 import Comment from "./reaction/Comment";
 import CommentSection from "./reaction/CommentSection";
 import MiniProfile from "../../miniprofile/MiniProfile";
+import { LoginContext } from "../../../contexts/ProfileContext";
+import { useContext } from "react";
 
 const Products = ({ paint, show, close }) => {
+     const { user } = useContext(LoginContext);
      if (!show) return null;
      return (
           <>
@@ -21,7 +24,7 @@ const Products = ({ paint, show, close }) => {
                          <div className="grid grid-cols-12">
                               {/* 1st section  */}
                               <div className="col-span-8 pr-4 border-r border-gray-700">
-                                   <MiniProfile paint={paint} />
+                                   <MiniProfile paint={paint} user={user} />
                                    <hr className="my-4 border-0.5 border-gray-700 " />
 
                                    <div>
@@ -38,9 +41,9 @@ const Products = ({ paint, show, close }) => {
                                              />
                                         </div>
 
-                                        <Reaction paint={paint}/>
+                                        <Reaction />
                                         <hr className="my-5 border-0.5 border-gray-700 " />
-                                        <Comment paint={paint} />
+                                        <Comment paint={paint} user={user} />
 
                                         {/* other comments */}
                                         <div className="h-180 overflow-auto scrollbar-none">
@@ -80,11 +83,11 @@ const Products = ({ paint, show, close }) => {
                                                        </p>
                                                        <p className="text-2xl font-bold mt-4">
                                                             <span>
-                                                                 Price: ${paint.price}{" "}
-                                                                 <del className="text-sm">${paint.price + 200}</del>
+                                                                 Price: $
+                                                                 {paint.price}
                                                             </span>
                                                        </p>
-                                                       <button className="w-full border mt-2 text-xl duration-150 border-transparent border-gray-700 rounded-md py-2 bg-linear-to-r from-white/10 to-white/2 hover:bg-blue-600 cursor-pointer hover:text-white">
+                                                       <button className="w-full border mt-2 text-xl duration-150 hover:border-transparent border-gray-700 rounded-md py-2 bg-linear-to-r from-white/10 to-white/2 hover:bg-blue-600 cursor-pointer hover:text-white">
                                                             Purchase
                                                        </button>
                                                   </div>

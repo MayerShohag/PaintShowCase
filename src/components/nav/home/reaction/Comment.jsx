@@ -1,13 +1,13 @@
-const Comment = ({ paint }) => {
+const Comment = ({ paint, user }) => {
      return (
           <>
                <div className="user-comment flex border border-gray-700 p-3 rounded-2xl gap-2">
                     <div className="w-11 h-11">
                          <img
-                              src={paint.url}
+                              src={user.avatar}
                               className="w-full h-full object-cover object-top rounded-xl"
-                              alt={paint.paintName}
-                              title={paint.painterName}
+                              alt={user.name}
+                              title={user.name}
                          />
                     </div>
                     <div className="w-10/12">

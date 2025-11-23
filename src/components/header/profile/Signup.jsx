@@ -89,7 +89,7 @@ const Signup = ({ isHaveAccount, setIsHaveAccount }) => {
      };
      return (
           <>
-               <div className="border border-gray-700 p-3 rounded-xl">
+               <div className="border border-gray-700 w-xl p-3 rounded-xl">
                     <div className="p-2 text-center">
                          <h1 className="md:leading-3 leading-0 font-[Audiowide] text-[10px] md:text-[15px]">
                               <span className="text-xl font-bold md:text-3xl md:font-bold">
@@ -104,42 +104,38 @@ const Signup = ({ isHaveAccount, setIsHaveAccount }) => {
                     </div>
                     <hr className=" border-gray-700" />
                     <form
-                         className="flex flex-col gap-3 mt-2"
+                         className="grid grid-cols-2 gap-3 mt-2"
                          onSubmit={(e) => {
                               handlePostSubmit(e);
                          }}
                     >
-                         <div className="flex gap-2">
-                              <div>
-                                   <label htmlFor="name">Name</label>
-                                   <br />
-                                   <input
-                                        type="text"
-                                        id="name"
-                                        value={name}
-                                        onChange={(e) =>
-                                             setName(e.target.value)
-                                        }
-                                        placeholder="name"
-                                        required
-                                        className="border border-gray-700 rounded-lg px-2 py-1"
-                                   />
-                              </div>
-                              <div>
-                                   <label htmlFor="username">Username</label>
-                                   <br />
-                                   <input
-                                        type="text"
-                                        placeholder="username"
-                                        id="username"
-                                        value={username}
-                                        onChange={(e) => termUsername(e)}
-                                        required
-                                        className="border border-gray-700 rounded-lg px-2 py-1"
-                                   />
-                              </div>
+                         <div className="col-span-2 md:col-span-1">
+                              <label htmlFor="name">Name</label>
+                              <br />
+                              <input
+                                   type="text"
+                                   id="name"
+                                   value={name}
+                                   onChange={(e) => setName(e.target.value)}
+                                   placeholder="name"
+                                   required
+                                   className="border w-full border-gray-700 rounded-lg px-2 py-1"
+                              />
                          </div>
-                         <div className="">
+                         <div className="col-span-2 md:col-span-1">
+                              <label htmlFor="username">Username</label>
+                              <br />
+                              <input
+                                   type="text"
+                                   placeholder="username"
+                                   id="username"
+                                   value={username}
+                                   onChange={(e) => termUsername(e)}
+                                   required
+                                   className="border w-full border-gray-700 rounded-lg px-2 py-1"
+                              />
+                         </div>
+                         <div className="col-span-2 md:col-span-1">
                               <label htmlFor="mail">Email</label>
                               <br />
                               <input
@@ -154,7 +150,7 @@ const Signup = ({ isHaveAccount, setIsHaveAccount }) => {
                                    id="mail"
                               />
                          </div>
-                         <div className="">
+                         <div className="col-span-2 md:col-span-1">
                               <label htmlFor="dob">Date of Birth</label>
                               <br />
                               <input
@@ -166,71 +162,48 @@ const Signup = ({ isHaveAccount, setIsHaveAccount }) => {
                                    className="border w-full border-gray-700 rounded-lg px-2 py-1"
                               />
                          </div>
-                         <div className="flex gap-2">
-                              <div>
-                                   <div className="flex items-center gap-1">
-                                        <label
-                                             htmlFor="signPassword"
-                                             className="flex items-center"
-                                        >
-                                             <span>Password</span>
-                                        </label>
-                                        <div className="hover:bg-white/20 p-1 rounded-full">
-                                             {showPass ? (
-                                                  <GoEye
-                                                       onClick={() =>
-                                                            setShowPass(
-                                                                 !showPass
-                                                            )
-                                                       }
-                                                  />
-                                             ) : (
-                                                  <GoEyeClosed
-                                                       onClick={() =>
-                                                            setShowPass(
-                                                                 !showPass
-                                                            )
-                                                       }
-                                                  />
-                                             )}
-                                        </div>
-                                   </div>
-                                   <input
-                                        type={showPass ? "text" : "password"}
-                                        name=""
-                                        id="signPassword"
-                                        required
-                                        minLength={8}
-                                        maxLength={255}
-                                        value={signPassword}
-                                        onChange={(e) =>
-                                             setSignPassword(e.target.value)
-                                        }
-                                        placeholder="password"
-                                        className="border border-gray-700 rounded-lg px-2 py-1"
-                                   />
-                              </div>
-                              <div>
-                                   <label htmlFor="profilePicture">
-                                        Profile Picture
+
+                         <div className="col-span-2 md:col-span-1">
+                              <div className="flex items-center gap-1">
+                                   <label
+                                        htmlFor="signPassword"
+                                        className="flex items-center"
+                                   >
+                                        <span>Password</span>
                                    </label>
-                                   <br />
-                                   <input
-                                        type="file"
-                                        id="profilePicture"
-                                        onChange={(e) =>
-                                             setProfilePicture(
-                                                  e.target.files[0]
-                                             )
-                                        }
-                                        accept="image/*"
-                                        required
-                                        placeholder="Upload photo"
-                                        className="border w-full border-gray-700 rounded-lg px-2 py-1"
-                                   />
+                                   <div className="hover:bg-white/20 p-1 rounded-full">
+                                        {showPass ? (
+                                             <GoEye
+                                                  onClick={() =>
+                                                       setShowPass(!showPass)
+                                                  }
+                                             />
+                                        ) : (
+                                             <GoEyeClosed
+                                                  onClick={() =>
+                                                       setShowPass(!showPass)
+                                                  }
+                                             />
+                                        )}
+                                   </div>
                               </div>
+                              <input
+                                   type={showPass ? "text" : "password"}
+                                   name=""
+                                   id="signPassword"
+                                   required
+                                   minLength={8}
+                                   maxLength={255}
+                                   value={signPassword}
+                                   onChange={(e) =>
+                                        setSignPassword(e.target.value)
+                                   }
+                                   placeholder="password"
+                                   className="border w-full border-gray-700 rounded-lg px-2 py-1"
+                              />
                          </div>
-                         <div>
+
+                         <div className="col-span-2 md:col-span-1">
                               <label htmlFor="gender">Gender</label>
                               <div className="flex justify-between border border-gray-700 rounded-lg px-2 py-1">
                                    <div className="flex gap-1 items-center accent-green-400">
@@ -277,7 +250,27 @@ const Signup = ({ isHaveAccount, setIsHaveAccount }) => {
                                    </div>
                               </div>
                          </div>
-                         <div className="flex items-center gap-1">
+
+                         <div className="col-span-2">
+                              <label htmlFor="profilePicture" className="flex flex-col border border-dashed text-2xl rounded-xl items-center justify-center py-10 text-gray-500">
+                                   Upload Photo
+                                   <input
+                                        type="file"
+                                        id="profilePicture"
+                                        onChange={(e) =>
+                                             setProfilePicture(
+                                                  e.target.files[0]
+                                             )
+                                        }
+                                        accept="image/*"
+                                        required
+                                        placeholder="Upload photo"
+                                        className="hidden"
+                                   />
+                              </label>
+                         </div>
+
+                         <div className="flex items-center col-span-2 gap-1">
                               <input
                                    type="checkbox"
                                    checked={termsCheck}
@@ -292,7 +285,7 @@ const Signup = ({ isHaveAccount, setIsHaveAccount }) => {
                          <input
                               type="submit"
                               value="Signup"
-                              className="border hover:bg-gray-800 cursor-pointer border-gray-700 rounded-lg px-2 py-1"
+                              className="border col-span-2 hover:bg-gray-800 cursor-pointer border-gray-700 rounded-lg px-2 py-1"
                          />
                     </form>
                     <p className="text-center mt-2">
