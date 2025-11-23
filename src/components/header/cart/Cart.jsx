@@ -1,5 +1,8 @@
 import { X } from "lucide-react";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { LoginContext } from "../../../contexts/ProfileContext";
+import Profile from "../profile/Profile";
+import { CartContext } from "../../../contexts/CartContext";
 
 const cartItems = [
      {
@@ -21,8 +24,8 @@ const cartItems = [
 ];
 
 const CartItem = ({ item }) => {
-     const [count, setCount] = useState(1)
-     
+     const [count, setCount] = useState(1);
+
      return (
           <div className="flex flex-col md:flex-row items-center justify-between p-4 bg-[#0e1217] text-[#A8B3CF] rounded-xl border border-gray-800 shadow-md mb-4">
                <div className="flex items-center gap-4 md:w-1/2 w-full mb-4 md:mb-0">
@@ -43,21 +46,25 @@ const CartItem = ({ item }) => {
 
                <div className="flex items-center gap-6 md:w-1/2 w-full justify-end">
                     <div className="flex items-center border border-gray-700 rounded-md overflow-hidden">
-                         <button onClick={()=> {
-                              if(count > 0) setCount(prev => prev - 1)
-                         }} className="px-3 py-1 text-gray-200 hover:bg-gray-700 transition">
+                         <button
+                              onClick={() => {
+                                   if (count > 0) setCount((prev) => prev - 1);
+                              }}
+                              className="px-3 py-1 text-gray-200 hover:bg-gray-700 transition"
+                         >
                               -
                          </button>
-                         <span className="px-4 py-1 text-white">
-                              {count}
-                         </span>
-                         <button onClick={()=> setCount(prev=> prev + 1)} className="px-3 py-1 text-gray-200 hover:bg-gray-700 transition">
+                         <span className="px-4 py-1 text-white">{count}</span>
+                         <button
+                              onClick={() => setCount((prev) => prev + 1)}
+                              className="px-3 py-1 text-gray-200 hover:bg-gray-700 transition"
+                         >
                               +
                          </button>
                     </div>
 
                     <p className="text-white font-semibold">
-                         ${item.price * item.qty}
+                         ${item.price * count}
                     </p>
 
                     <button className="text-red-500 hover:text-red-400">
@@ -73,30 +80,37 @@ const Cart = () => {
           (acc, item) => acc + item.price * item.qty,
           0
      );
+     const { isLogin } = useContext(LoginContext);
 
      return (
-          <div className="min-h-screen bg-[#0e1217] text-[#A8B3CF] max-w-[1014px] mx-auto lg:border border-gray-700 lg:border-t-0 p-6">
-               <div className="max-w-6xl mx-auto">
-                    <h2 className="text-4xl font-bold text-gray-300 mb-8" >
-                         Your Cart
-                    </h2>
+          <>
+               {isLogin ? (
+                    <div className="min-h-screen bg-[#0e1217] text-[#A8B3CF] max-w-[1014px] mx-auto lg:border border-gray-700 lg:border-t-0 p-6">
+                         <div className="max-w-6xl mx-auto">
+                              <h2 className="text-4xl font-bold text-gray-300 mb-8">
+                                   Your Cart
+                              </h2>
 
-                    <div>
-                         {cartItems.map((item) => (
-                              <CartItem key={item.id} item={item} />
-                         ))}
-                    </div>
+                              <div>
+                                   {cartItems.map((item) => (
+                                        <CartItem key={item.id} item={item} />
+                                   ))}
+                              </div>
 
-                    <div className="mt-8 border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center">
-                         <div className="text-white text-xl font-semibold mb-4 md:mb-0">
-                              Total: ${totalPrice}
+                              <div className="mt-8 border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center">
+                                   <div className="text-white text-xl font-semibold mb-4 md:mb-0">
+                                        Total: ${totalPrice}
+                                   </div>
+                                   <button className="bg-cyan-600 hover:bg-cyan-500 text-white py-3 px-8 rounded-full font-semibold transition transform hover:scale-[1.03]">
+                                        Checkout
+                                   </button>
+                              </div>
                          </div>
-                         <button className="bg-cyan-600 hover:bg-cyan-500 text-white py-3 px-8 rounded-full font-semibold transition transform hover:scale-[1.03]">
-                              Checkout
-                         </button>
                     </div>
-               </div>
-          </div>
+               ) : (
+                    <Profile />
+               )}
+          </>
      );
 };
 

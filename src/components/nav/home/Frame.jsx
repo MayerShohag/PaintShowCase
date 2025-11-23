@@ -29,7 +29,7 @@ const Frame = ({ products }) => {
                                    onClick={() => handleSelectPaint(paint)}
                               />
                               <div>
-                                   <Reaction paint={paint}/>
+                                   <Reaction />
                               </div>
                          </div>
                     ))}

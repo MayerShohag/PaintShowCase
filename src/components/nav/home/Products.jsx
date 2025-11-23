@@ -41,7 +41,7 @@ const Products = ({ paint, show, close }) => {
                                              />
                                         </div>
 
-                                        <Reaction />
+                                        <Reaction paint={paint} />
                                         <hr className="my-5 border-0.5 border-gray-700 " />
                                         <Comment paint={paint} user={user} />
 
@@ -98,7 +98,7 @@ const Products = ({ paint, show, close }) => {
                                                        </summary>
                                                        <hr className="my-2 border-0.5 border-gray-700 " />
 
-                                                       <p className="text-lg p-2">
+                                                       <div className="text-lg p-2">
                                                             <p className="h-78 overflow-auto scrollbar-thin">
                                                                  Lorem ipsum
                                                                  dolor sit amet
@@ -130,7 +130,7 @@ const Products = ({ paint, show, close }) => {
                                                                  provident ut
                                                                  natus!
                                                             </p>
-                                                       </p>
+                                                       </div>
                                                   </details>
                                              </section>
                                         </section>
