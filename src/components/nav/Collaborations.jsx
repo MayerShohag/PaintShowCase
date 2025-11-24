@@ -75,7 +75,7 @@ const CollaborationCard = ({ item }) => (
 
 const Collaborations = () => {
      return (
-          <section className="max-w-[1014px] mx-auto lg:border border-gray-700 lg:border-t-0 font-sans p-4 sm:p-8 px-4 lg:space-y-10">
+          <section className="max-w-[1014px] min-h-screen mx-auto lg:border border-gray-700 lg:border-t-0 font-sans p-4 sm:p-8 px-4 lg:space-y-10">
                <div className="flex flex-col gap-5 lg:pt-17 py-10">
                     <h2 className="text-4xl md:text-6xl font-extrabold text-center text-gray-300">
                          Our Collaborations

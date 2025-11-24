@@ -21,9 +21,9 @@ const ProfileContext = ({ children }) => {
 
      const handleLogout = () => {
           setIsLogin(false);
-          setUser({})
+          setUser({});
           localStorage.removeItem("isLogin");
-          localStorage.removeItem("user")
+          localStorage.removeItem("user");
      };
      return (
           <LoginContext.Provider

@@ -9,7 +9,7 @@ const Notifications = () => {
      return (
           <>
                {isLogin ? (
-                    <div className="max-w-[1014px] mx-auto border border-gray-700 border-t-0">
+                    <div className="max-w-[1014px] min-h-screen mx-auto border border-gray-700 border-t-0">
                          <h1 className="p-4 text-3xl font-bold">
                               Notifications
                          </h1>

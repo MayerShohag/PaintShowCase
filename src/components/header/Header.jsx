@@ -9,6 +9,7 @@ import { HiMiniXMark } from "react-icons/hi2";
 import { LoginContext } from "../../contexts/ProfileContext";
 const Header = () => {
      const [hamburger, setHamburger] = useState(false);
+     const [profile, setProfile] = useState(false);
      const { user, isLogin } = useContext(LoginContext);
      let content = hamburger ? (
           <div className="rounded-r-xl w-50 absolute h-130 overflow-auto scrollbar-none left-0 top-13 bg-gray-900">
@@ -82,9 +83,9 @@ const Header = () => {
                               </Link>
                          </div>
                          <div className="profile relative">
-                              <Link
-                                   to="/profile"
+                              <div
                                    title="Profile"
+                                   onClick={() => setProfile(!profile)}
                                    className="flex hover:ring cursor-pointer transition-all duration-200 hover:ring-gray-700 hover:text-white items-center gap-2 bg-[#1C1F26] p-1 rounded-xl"
                               >
                                    {isLogin ? (
@@ -97,7 +98,20 @@ const Header = () => {
                                    ) : (
                                         <CiUser className="text-lg md:text-2xl lg:text-[34px]" />
                                    )}
-                              </Link>
+                              </div>
+                              {profile ? (
+                                   <div className="absolute rounded right-0 p-2 bg-gray-800">
+                                        <Link
+                                             to="/profile"
+                                             className="p-1 px-2 hover:bg-gray-700 duration-200 w-full rounded inline-block"
+                                        >
+                                             Profile
+                                        </Link>
+                                        <button className="p-1 px-2 cursor-pointer hover:bg-gray-700 duration-200 w-full rounded inline-block">
+                                             Settings
+                                        </button>
+                                   </div>
+                              ) : null}
                          </div>
                     </div>
                </section>

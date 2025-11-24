@@ -63,7 +63,7 @@ const videos = [
 
 const Inspirations = () => {
      return (
-          <section className="max-w-[1014px] mx-auto lg:pt-16 pb-8 px-4 space-y-16 lg:border border-gray-700 lg:border-t-0 p-4">
+          <section className="max-w-[1014px] min-h-screen mx-auto lg:pt-16 pb-8 px-4 space-y-16 lg:border border-gray-700 lg:border-t-0 p-4">
                <div className="text-center flex flex-col gap-5 pt-10">
                     <h2 className="text-4xl md:text-6xl font-extrabold text-gray-300 leading-tight">
                          Inspirations & Blog

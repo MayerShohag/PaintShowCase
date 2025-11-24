@@ -1,9 +1,13 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AiOutlinePinterest, AiOutlineYoutube } from "react-icons/ai";
 import { BiSupport } from "react-icons/bi";
-import { BsFillPostcardHeartFill, BsFillReplyFill } from "react-icons/bs";
+import {
+     BsDot,
+     BsFillPostcardHeartFill,
+     BsFillReplyFill,
+} from "react-icons/bs";
 import { CgOrganisation, CgWebsite } from "react-icons/cg";
-import { CiEdit, CiFacebook } from "react-icons/ci";
+import { CiFacebook } from "react-icons/ci";
 import {
      FaAddressCard,
      FaCreditCard,
@@ -16,19 +20,21 @@ import {
 import { FaArrowTrendUp, FaPaintbrush } from "react-icons/fa6";
 import { FiHash } from "react-icons/fi";
 import { GoPlus } from "react-icons/go";
-import { IoLocationOutline } from "react-icons/io5";
-import { LuDot, LuLogOut, LuSquareArrowOutUpRight } from "react-icons/lu";
+import { LuLogOut, LuSquareArrowOutUpRight } from "react-icons/lu";
 import { MdFavorite, MdPrivacyTip } from "react-icons/md";
 import { PiTiktokLogo } from "react-icons/pi";
 import { RiAccountBoxFill, RiTwitterXFill } from "react-icons/ri";
 import { Link } from "react-router";
 import { LoginContext } from "../../../contexts/ProfileContext";
+import { OwnContext } from "../../../contexts/Context";
 
 const ProfileDetails = ({ handleLogout }) => {
      const { user } = useContext(LoginContext);
+     const [showText, setShowText] = useState(false);
+     const { showModal, setShowModal } = useContext(OwnContext);
      return (
-          <div className="grid grid-cols-12 gap-5 my-5 mb-20 container mx-auto px-5 lg:px-50">
-               <div className="lg:col-span-4 col-span-5 border border-gray-700 rounded-2xl p-2">
+          <div className="grid grid-cols-12 gap-5 md:my-5 mb-20 md:px-2 lg:px-0 max-w-[1014px] min-h-screen container mx-auto">
+               <div className="hidden h-fit md:block md:col-span-4 lg:col-span-4 col-span-5 border border-gray-700 rounded-2xl p-2">
                     <div className="flex cursor-pointer items-center hover:bg-white/5 px-2 py-0 rounded-xl justify-between">
                          <div className="flex items-center gap-2">
                               <img
@@ -149,156 +155,142 @@ const ProfileDetails = ({ handleLogout }) => {
                          <span>Log Out</span>
                     </div>
                </div>
-               <div className="lg:col-span-8 col-span-7 border border-gray-700 rounded-2xl p-3">
-                    <div className="h-70">
+               <div className="col-span-12 h-fit md:col-span-8 lg:col-span-8 md:border md:border-gray-700 rounded-2xl md:p-3">
+                    <div className="h-50 md:h-55 lg:h-70">
                          <img
-                              className="w-full h-full cursor-pointer hover:contrast-120 rounded-xl object-cover"
+                              className="w-full h-full cursor-pointer hover:contrast-120 md:rounded-xl object-cover"
                               src={user.avatar}
                               title={user.name}
                               alt={user.name}
                          />
-                         <div className="grid grid-cols-12 items-center gap-4 px-5 ">
-                              <div className="col-span-4 h-40 relative">
+                    </div>
+                    <div className="flex flex-col justify-center items-center">
+                         <div className="relative w-40 lg:w-50 h-22">
+                              <div className="w-full h-40 lg:h-50 absolute -top-20 lg:-top-30 border-6 rounded-full overflow-hidden">
                                    <img
                                         src={user.avatar}
-                                        alt={user.name}
-                                        title={user.username}
-                                        className="w-50 h-50 absolute -top-20 rounded-full cursor-pointer hover:contrast-120 shadow-2xl border-5 object-cover "
+                                        className="w-full h-full object-cover rounded-full hover:scale-105 duration-200 transform"
+                                        alt=""
                                    />
                               </div>
-                              <div className="col-span-8">
-                                   <div className="flex items-center justify-between w-full">
-                                        <div>
-                                             <h1 className="text-4xl font-bold">
-                                                  {user.name}
-                                             </h1>
-                                             <Link
-                                                  to="/profile"
-                                                  className="hover:underline"
-                                             >
-                                                  @{user.username}
-                                             </Link>
-                                             <div className="flex items-center">
-                                                  <Link
-                                                       to="/profile"
-                                                       className="hover:underline"
-                                                  >
-                                                       {user.followers}{" "}
-                                                       followers
-                                                  </Link>
-                                                  <LuDot className="text-2xl" />
-                                                  <Link
-                                                       to="/profile"
-                                                       className="hover:underline"
-                                                  >
-                                                       {user.following}{" "}
-                                                       followings
-                                                  </Link>
-                                             </div>
-                                             <div className="flex items-center gap-1">
-                                                  <IoLocationOutline />
-                                                  <span>{user.location}</span>
-                                             </div>
-                                        </div>
-                                        <div className="bg-white/10 cursor-pointer hover:bg-white/15 hover:text-white px-3 flex items-center gap-1 text-xl py-2 rounded-lg">
-                                             <CiEdit />
-                                             <input
-                                                  className="cursor-pointer"
-                                                  type="button"
-                                                  value="Edit"
-                                             />
-                                        </div>
-                                   </div>
-                              </div>
                          </div>
-                         <hr className="border-gray-700 my-2" />
-                         <div className="">
-                              <h1 className="text-2xl font-bold">About</h1>
-                              <div className="bg-white/5 p-3 rounded-xl border border-gray-700 mt-2 max-h-53.5 overflow-auto scrollbar-none">
-                                   <p className="text-lg">
-                                        {user.bio} Lorem ipsum dolor sit amet
-                                        consectetur adipisicing elit. Aliquam
-                                        corrupti ad consequatur omnis vitae
-                                        neque modi impedit, optio adipisci sequi
-                                        labore, necessitatibus sit doloribus
-                                        aspernatur nihil. Sed doloribus nostrum
-                                        illum nam quibusdam quod dolorum
-                                        molestiae architecto magni. Animi nihil
-                                        praesentium dolore quas harum maxime
-                                        fuga qui similique a odit! Iusto
-                                        explicabo deleniti quasi officiis illum
-                                        atque quae porro illo quis? Sunt
-                                        possimus quos aut autem qui odio quam!
-                                        Tempora vel explicabo rerum aspernatur
-                                        libero vero vitae quisquam maxime
-                                        perspiciatis velit consequuntur quidem
-                                        nisi laborum nemo, exercitationem odio
-                                        ut incidunt? Animi voluptatum ducimus ab
-                                        sequi perferendis exercitationem est
-                                        debitis nesciunt. Dolor?
+                         <div className="mt-3 text-center">
+                              <div className="flex items-center">
+                                   <h1 className="text-2xl font-bold">
+                                        {user.name}
+                                   </h1>
+                                   <BsDot className="text-xl" />
+                                   <p className="hover:underline cursor-pointer">
+                                        @{user.username}
                                    </p>
                               </div>
-                              <div className="mt-5">
-                                   <h1 className="text-xl mb-2 font-bold">
-                                        Social Links
-                                   </h1>
-                                   <div className="grid grid-cols-2 gap-2">
-                                        <div className="border flex items-center px-2 rounded-xl border-gray-700">
-                                             <AiOutlinePinterest className="text-4xl" />
-                                             <input
-                                                  type="text"
-                                                  id="pinterest"
-                                                  className="w-full py-2 px-2 text-xl outline-none"
-                                                  placeholder="Pinterest profile link"
-                                             />
-                                        </div>
-                                        <div className="border flex items-center px-2 rounded-xl border-gray-700">
-                                             <AiOutlineYoutube className="text-4xl" />
-                                             <input
-                                                  type="text"
-                                                  id="Youtube"
-                                                  className="w-full py-2 px-2 text-xl outline-none"
-                                                  placeholder="Youtube profile link"
-                                             />
-                                        </div>
-                                        <div className="border flex items-center px-2 rounded-xl border-gray-700">
-                                             <CiFacebook className="text-4xl" />
-                                             <input
-                                                  type="text"
-                                                  id="Facebook"
-                                                  className="w-full py-2 px-2 text-xl outline-none"
-                                                  placeholder="Facebook profile link"
-                                             />
-                                        </div>
-                                        <div className="border flex items-center px-2 rounded-xl border-gray-700">
-                                             <RiTwitterXFill className="text-4xl" />
-                                             <input
-                                                  type="text"
-                                                  id="X"
-                                                  className="w-full py-2 px-2 text-xl outline-none"
-                                                  placeholder="X profile link"
-                                             />
-                                        </div>
-                                        <div className="border flex items-center px-2 rounded-xl border-gray-700">
-                                             <PiTiktokLogo className="text-4xl" />
-                                             <input
-                                                  type="text"
-                                                  id="TikTok"
-                                                  className="w-full py-2 px-2 text-xl outline-none"
-                                                  placeholder="TikTok profile link"
-                                             />
-                                        </div>
-                                        <div className="border flex items-center px-2 rounded-xl border-gray-700">
-                                             <CgWebsite className="text-4xl" />
-                                             <input
-                                                  type="text"
-                                                  id="Your"
-                                                  className="w-full py-2 px-2 text-xl outline-none"
-                                                  placeholder="Your website link"
-                                             />
-                                        </div>
+                              <div className="flex items-center justify-center">
+                                   <p
+                                        className="hover:underline cursor-pointer"
+                                        title="supporters"
+                                   >
+                                        {user.followers} supporters
+                                   </p>
+                                   <BsDot className="text-xl" />
+                                   <p
+                                        className="hover:underline cursor-pointer"
+                                        title="supporting"
+                                   >
+                                        {user.following} supporting
+                                   </p>
+                              </div>
+                              <div className="mb-2">
+                                   <p>{user.location}</p>
+                                   <p className="mt-2">{user.bio}</p>
+                              </div>
+                         </div>
+                    </div>
+                    <hr className="border-gray-700 my-5 mb-3" />
+                    <div className="px-3 md:px-0">
+                         <h1 className="text-2xl font-bold">About</h1>
+                         <div
+                              className={`bg-white/3 p-3 py-2 rounded-xl border border-gray-800 mt-2 overflow-hidden transition-all duration-500 ${
+                                   showText ? "max-h-[2000px]" : "max-h-30"
+                              }`}
+                         >
+                              <button
+                                   className="focus-within:underline cursor-pointer"
+                                   onClick={() => setShowText(!showText)}
+                              >
+                                   See more
+                              </button>
+                              <p className="text-lg">
+                                   {user.bio} Lorem ipsum dolor sit amet
+                                   consectetur adipisicing elit. Aliquam
+                                   corrupti ad consequatur omnis vitae neque
+                                   modi impedit, optio adipisci sequi labore,
+                                   necessitatibus sit doloribus aspernatur
+                                   nihil. Sed doloribus nostrum illum nam
+                                   quibusdam quod dolorum molestiae architecto
+                                   magni. Animi nihil praesentium dolore quas
+                                   harum maxime fuga qui similique a odit!
+                              </p>
+                         </div>
+                         <div className="mt-5">
+                              <h1 className="text-xl mb-2 font-bold">
+                                   Social Links
+                              </h1>
+                              <div className="grid grid-cols-2 gap-2">
+                                   <div className="border col-span-2 md:col-span-1 flex items-center px-2 rounded-xl border-gray-700">
+                                        <AiOutlinePinterest className="text-4xl" />
+                                        <input
+                                             type="text"
+                                             id="pinterest"
+                                             className="w-full py-2 px-2 text-xl outline-none"
+                                             placeholder="Pinterest profile link"
+                                        />
                                    </div>
-                                   <div className="border mt-2 flex cursor-pointer bg-white/5 hover:bg-white/8 items-center justify-center px-2 rounded-xl border-gray-700">
+                                   <div className="border col-span-2 md:col-span-1 flex items-center px-2 rounded-xl border-gray-700">
+                                        <AiOutlineYoutube className="text-4xl" />
+                                        <input
+                                             type="text"
+                                             id="Youtube"
+                                             className="w-full py-2 px-2 text-xl outline-none"
+                                             placeholder="Youtube profile link"
+                                        />
+                                   </div>
+                                   <div className="border col-span-2 md:col-span-1 flex items-center px-2 rounded-xl border-gray-700">
+                                        <CiFacebook className="text-4xl" />
+                                        <input
+                                             type="text"
+                                             id="Facebook"
+                                             className="w-full py-2 px-2 text-xl outline-none"
+                                             placeholder="Facebook profile link"
+                                        />
+                                   </div>
+                                   <div className="border col-span-2 md:col-span-1 flex items-center px-2 rounded-xl border-gray-700">
+                                        <RiTwitterXFill className="text-4xl" />
+                                        <input
+                                             type="text"
+                                             id="X"
+                                             className="w-full py-2 px-2 text-xl outline-none"
+                                             placeholder="X profile link"
+                                        />
+                                   </div>
+                                   <div className="border col-span-2 md:col-span-1 flex items-center px-2 rounded-xl border-gray-700">
+                                        <PiTiktokLogo className="text-4xl" />
+                                        <input
+                                             type="text"
+                                             id="TikTok"
+                                             className="w-full py-2 px-2 text-xl outline-none"
+                                             placeholder="TikTok profile link"
+                                        />
+                                   </div>
+                                   <div className="border col-span-2 md:col-span-1 flex items-center px-2 rounded-xl border-gray-700">
+                                        <CgWebsite className="text-4xl" />
+                                        <input
+                                             type="text"
+                                             id="Your"
+                                             className="w-full py-2 px-2 text-xl outline-none"
+                                             placeholder="Your website link"
+                                        />
+                                   </div>
+                                   <div className="col-span-2 flex cursor-pointer bg-white/5 hover:bg-white/8 items-center justify-center px-2 rounded-xl border-gray-700">
                                         <GoPlus className="text-2xl" />
                                         <input
                                              type="button"

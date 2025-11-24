@@ -8,8 +8,9 @@
      scrollbar-width: thin;
      scrollbar-color: gray #0e1217;
 }
-@media screen and (min-width: 320px) {
-     .ownGrid {
-          grid-column: 1;
-     }
+.bg-global {
+     background-color: #0e1217;
+}
+.text-global {
+     color: #a8b3cf;
 }
