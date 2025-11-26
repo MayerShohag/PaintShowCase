@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import { LoginContext } from "../../../contexts/ProfileContext";
+import { Bounce, ToastContainer, toast } from "react-toastify";
 
 const CartFrame = ({ selectCart, setSelectCart }) => {
      const [district, setDistrict] = useState([]);
@@ -41,6 +42,20 @@ const CartFrame = ({ selectCart, setSelectCart }) => {
           (prev, current) => prev + current.price + charge,
           0
      );
+
+     const handleDelivery = () => {
+          toast("Delivery Pending...", {
+               position: "top-center",
+               autoClose: 1000,
+               hideProgressBar: false,
+               closeOnClick: false,
+               pauseOnHover: true,
+               draggable: true,
+               progress: undefined,
+               theme: "dark",
+               transition: Bounce,
+          });
+     };
 
      return (
           <div>
@@ -148,6 +163,15 @@ const CartFrame = ({ selectCart, setSelectCart }) => {
                          <p className="text-right text-2xl font-bold">
                               ${totalPrice}
                          </p>
+                    </div>
+                    <div className="mt-5">
+                         <button
+                              onClick={handleDelivery}
+                              className="border w-full py-2 border-gray-700 rounded-md hover:bg-accent/50 cursor-pointer duration-200 transition-all hover:border-transparent hover:text-white"
+                         >
+                              Delivery
+                         </button>
+                         <ToastContainer />
                     </div>
                </div>
           </div>

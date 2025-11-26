@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { LoginContext } from "../../contexts/ProfileContext";
 import { RiDragDropLine } from "react-icons/ri";
 import Profile from "../header/profile/Profile";
+import { toast, ToastContainer } from "react-toastify";
 
 const Post = () => {
      const { user, isLogin } = useContext(LoginContext);
@@ -54,6 +55,7 @@ const Post = () => {
           if (!isLogin) return alert(`Please Login First`);
           e.preventDefault();
           const url = await formUpload();
+
           const postData = {
                paintName: paintTitle,
                painterName: user.name,
@@ -298,7 +300,6 @@ const Post = () => {
                                              type="text"
                                              name="condition"
                                              value={paintCondition}
-                                             required
                                              onChange={(e) =>
                                                   setPaintCondition(
                                                        e.target.value
@@ -318,7 +319,6 @@ const Post = () => {
                                         <input
                                              type="text"
                                              name="weight"
-                                             required
                                              value={paintWeight}
                                              onChange={(e) =>
                                                   setPaintWeight(e.target.value)
@@ -335,7 +335,6 @@ const Post = () => {
                                              type="text"
                                              name="date"
                                              value={paintDateAge}
-                                             required
                                              onChange={(e) =>
                                                   setPaintDateAge(
                                                        e.target.value
@@ -356,7 +355,6 @@ const Post = () => {
                                         className="w-full border border-gray-700 rounded px-3 py-2"
                                         rows="2"
                                         value={paintShipping}
-                                        required
                                         onChange={(e) =>
                                              setPaintShipping(e.target.value)
                                         }
@@ -372,7 +370,6 @@ const Post = () => {
                                         type="text"
                                         name="tags"
                                         value={paintTags}
-                                        required
                                         onChange={(e) =>
                                              setPaintTags(e.target.value)
                                         }
@@ -436,12 +433,18 @@ const Post = () => {
                                    </div>
                               </div>
 
-                              <button
-                                   type="submit"
-                                   className="mt-4 bg-blue-600 cursor-pointer text-white px-6 py-2 rounded hover:bg-blue-700 transition"
-                              >
-                                   Post Painting
-                              </button>
+                              <div>
+                                   <button
+                                        type="submit"
+                                        onClick={() =>
+                                             toast(`Uploading Post...`)
+                                        }
+                                        className="mt-4 bg-blue-600 cursor-pointer text-white px-6 py-2 rounded hover:bg-blue-700 transition"
+                                   >
+                                        Post Painting
+                                   </button>
+                                   <ToastContainer />
+                              </div>
                          </form>
                     </div>
                ) : (
