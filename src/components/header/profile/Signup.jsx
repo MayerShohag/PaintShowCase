@@ -59,6 +59,8 @@ const Signup = ({ isHaveAccount, setIsHaveAccount }) => {
                avatar: imageUrl,
                followers: 0,
                following: 0,
+               cart: 0,
+               notifications: 0,
                dateOfBirth: date,
                bio: "hello friends",
                datetime: dateTime.toLocaleTimeString(),
@@ -252,7 +254,10 @@ const Signup = ({ isHaveAccount, setIsHaveAccount }) => {
                          </div>
 
                          <div className="col-span-2">
-                              <label htmlFor="profilePicture" className="flex flex-col border border-dashed text-2xl rounded-xl items-center justify-center py-10 text-gray-500">
+                              <label
+                                   htmlFor="profilePicture"
+                                   className="flex flex-col border border-dashed text-2xl rounded-xl items-center justify-center py-10 text-gray-500"
+                              >
                                    Upload Photo
                                    <input
                                         type="file"

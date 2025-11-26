@@ -11,6 +11,7 @@ const Header = () => {
      const [hamburger, setHamburger] = useState(false);
      const [profile, setProfile] = useState(false);
      const { user, isLogin } = useContext(LoginContext);
+
      let content = hamburger ? (
           <div className="rounded-r-xl w-50 absolute h-130 overflow-auto scrollbar-none left-0 top-13 bg-gray-900">
                <Aside />
@@ -79,7 +80,9 @@ const Header = () => {
                                    className="flex hover:ring transition-all duration-200 hover:ring-gray-700 hover:text-white items-center gap-1 bg-[#1C1F26] p-2 rounded-xl"
                               >
                                    <IoCartOutline className="text-lg md:text-2xl" />
-                                   <span className="md:text-xl text-sm">0</span>
+                                   <span className="md:text-xl text-sm">
+                                        {user.cart}
+                                   </span>
                               </Link>
                          </div>
                          <div className="profile relative">

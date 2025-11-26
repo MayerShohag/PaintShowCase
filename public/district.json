@@ -1,0 +1,837 @@
+[
+     {
+          "district": "Bagerhat",
+          "shippingCharge": 180,
+          "localities": [
+               "Bagerhat Sadar",
+               "Chitalmari",
+               "Fakirhat",
+               "Kachua",
+               "Mollahat",
+               "Mongla",
+               "Morrelganj",
+               "Rampal",
+               "Sarankhola"
+          ]
+     },
+     {
+          "district": "Bandarban",
+          "shippingCharge": 200,
+          "localities": [
+               "Bandarban Sadar",
+               "Lama",
+               "Naikhongchhari",
+               "Rowangchhari",
+               "Ruma",
+               "Thanchi",
+               "Alikadam"
+          ]
+     },
+     {
+          "district": "Barguna",
+          "shippingCharge": 170,
+          "localities": [
+               "Amtali",
+               "Bamna",
+               "Barguna Sadar",
+               "Betagi",
+               "Patharghata",
+               "Taltali"
+          ]
+     },
+     {
+          "district": "Barishal",
+          "shippingCharge": 180,
+          "localities": [
+               "Agailjhara",
+               "Babuganj",
+               "Bakerganj",
+               "Banaripara",
+               "Gaurnadi",
+               "Hizla",
+               "Barishal Sadar",
+               "Mehendiganj",
+               "Muladi",
+               "Wazirpur"
+          ]
+     },
+     {
+          "district": "Bhola",
+          "shippingCharge": 170,
+          "localities": [
+               "Bhola Sadar",
+               "Burhanuddin",
+               "Char Fasson",
+               "Daulatkhan",
+               "Lalmohan",
+               "Manpura",
+               "Tazumuddin"
+          ]
+     },
+     {
+          "district": "Bogura",
+          "shippingCharge": 170,
+          "localities": [
+               "Adamdighi",
+               "Bogura Sadar",
+               "Dhunat",
+               "Dupchanchia",
+               "Gabtali",
+               "Kahaloo",
+               "Nandigram",
+               "Sariakandi",
+               "Shajahanpur",
+               "Sherpur",
+               "Shibganj",
+               "Sonatola"
+          ]
+     },
+     {
+          "district": "Brahmanbaria",
+          "shippingCharge": 160,
+          "localities": [
+               "Brahmanbaria Sadar",
+               "Ashuganj",
+               "Bancharampur",
+               "Kasba",
+               "Nabinagar",
+               "Nasirnagar",
+               "Sarail",
+               "Bijoynagar"
+          ]
+     },
+     {
+          "district": "Chandpur",
+          "shippingCharge": 170,
+          "localities": [
+               "Chandpur Sadar",
+               "Faridganj",
+               "Haimchar",
+               "Haziganj",
+               "Kachua",
+               "Matlab Dakshin",
+               "Matlab Uttar",
+               "Shahrasti"
+          ]
+     },
+     {
+          "district": "Chattogram",
+          "shippingCharge": 170,
+          "localities": [
+               "Anwara",
+               "Banshkhali",
+               "Boalkhali",
+               "Chandanaish",
+               "Fatikchhari",
+               "Hathazari",
+               "Lohagara",
+               "Mirsharai",
+               "Patiya",
+               "Rangunia",
+               "Raozan",
+               "Sandwip",
+               "Satkania",
+               "Sitakunda",
+               "Chattogram Sadar"
+          ]
+     },
+     {
+          "district": "Chuadanga",
+          "shippingCharge": 170,
+          "localities": [
+               "Alamdanga",
+               "Chuadanga Sadar",
+               "Damurhuda",
+               "Jibannagar"
+          ]
+     },
+     {
+          "district": "Cox's Bazar",
+          "shippingCharge": 200,
+          "localities": [
+               "Chakaria",
+               "Cox’s Bazar Sadar",
+               "Kutubdia",
+               "Maheshkhali",
+               "Pekua",
+               "Ramu",
+               "Teknaf",
+               "Ukhia"
+          ]
+     },
+     {
+          "district": "Cumilla",
+          "shippingCharge": 160,
+          "localities": [
+               "Barura",
+               "Brahmanpara",
+               "Burichang",
+               "Chandina",
+               "Chauddagram",
+               "Cumilla Sadar",
+               "Cumilla Sadar Dakshin",
+               "Daudkandi",
+               "Davidhar",
+               "Homna",
+               "Laksam",
+               "Lalmai",
+               "Meghna",
+               "Monoharganj",
+               "Muradnagar",
+               "Nangalkot",
+               "Titas"
+          ]
+     },
+     {
+          "district": "Dhaka",
+          "shippingCharge": 120,
+          "localities": [
+               "Dhamrai",
+               "Dohar",
+               "Keraniganj",
+               "Nawabganj",
+               "Savar",
+               "Dhaka City Corporation"
+          ]
+     },
+     {
+          "district": "Dinajpur",
+          "shippingCharge": 170,
+          "localities": [
+               "Birampur",
+               "Birganj",
+               "Biral",
+               "Bochaganj",
+               "Chirirbandar",
+               "Dinajpur Sadar",
+               "Ghoraghat",
+               "Hakimpur",
+               "Kaharole",
+               "Khansama",
+               "Nawabganj",
+               "Parbatipur"
+          ]
+     },
+     {
+          "district": "Faridpur",
+          "shippingCharge": 160,
+          "localities": [
+               "Alfadanga",
+               "Bhanga",
+               "Boalmari",
+               "Charbhadrasan",
+               "Faridpur Sadar",
+               "Madhukhali",
+               "Nagarkanda",
+               "Sadarpur",
+               "Saltha"
+          ]
+     },
+     {
+          "district": "Feni",
+          "shippingCharge": 170,
+          "localities": [
+               "Chhagalnaiya",
+               "Daganbhuiyan",
+               "Feni Sadar",
+               "Fulgaazi",
+               "Parshuram",
+               "Sonagazi"
+          ]
+     },
+     {
+          "district": "Gaibandha",
+          "shippingCharge": 170,
+          "localities": [
+               "Fulchhari",
+               "Gaibandha Sadar",
+               "Gobindaganj",
+               "Palashbari",
+               "Sadullapur",
+               "Saghata",
+               "Sundarganj"
+          ]
+     },
+     {
+          "district": "Gazipur",
+          "shippingCharge": 140,
+          "localities": [
+               "Gazipur Sadar",
+               "Kaliakair",
+               "Kaliganj",
+               "Kapasia",
+               "Sreepur"
+          ]
+     },
+     {
+          "district": "Gopalganj",
+          "shippingCharge": 160,
+          "localities": [
+               "Gopalganj Sadar",
+               "Kashiani",
+               "Kotalipara",
+               "Muksudpur",
+               "Tungipara"
+          ]
+     },
+     {
+          "district": "Habiganj",
+          "shippingCharge": 170,
+          "localities": [
+               "Ajmiriganj",
+               "Bahubal",
+               "Baniachong",
+               "Chunarughat",
+               "Habiganj Sadar",
+               "Lakhai",
+               "Madhabpur",
+               "Nabiganj"
+          ]
+     },
+     {
+          "district": "Jamalpur",
+          "shippingCharge": 170,
+          "localities": [
+               "Baksiganj",
+               "Dewanganj",
+               "Islampur",
+               "Jamalpur Sadar",
+               "Madarganj",
+               "Melandaha",
+               "Sarishabari"
+          ]
+     },
+     {
+          "district": "Jashore",
+          "shippingCharge": 180,
+          "localities": [
+               "Abhaynagar",
+               "Bagherpara",
+               "Chaugachha",
+               "Jhikargachha",
+               "Jashore Sadar",
+               "Keshabpur",
+               "Manirampur",
+               "Sharsha"
+          ]
+     },
+     {
+          "district": "Jhalokathi",
+          "shippingCharge": 170,
+          "localities": ["Jhalokathi Sadar", "Kathalia", "Nalchity", "Rajapur"]
+     },
+     {
+          "district": "Jhenaidah",
+          "shippingCharge": 170,
+          "localities": [
+               "Harinakunda",
+               "Jhenaidah Sadar",
+               "Kaliganj",
+               "Kotchandpur",
+               "Maheshpur",
+               "Shailkupa"
+          ]
+     },
+     {
+          "district": "Joypurhat",
+          "shippingCharge": 170,
+          "localities": [
+               "Akkelpur",
+               "Joypurhat Sadar",
+               "Kalai",
+               "Khetlal",
+               "Panchbibi"
+          ]
+     },
+     {
+          "district": "Khagrachhari",
+          "shippingCharge": 200,
+          "localities": [
+               "Dighinala",
+               "Khagrachhari Sadar",
+               "Laxmichhari",
+               "Mahalchhari",
+               "Manikchhari",
+               "Matiranga",
+               "Panchhari",
+               "Ramgarh"
+          ]
+     },
+     {
+          "district": "Khulna",
+          "shippingCharge": 180,
+          "localities": [
+               "Batiaghata",
+               "Dacope",
+               "Dighalia",
+               "Dumuria",
+               "Koyra",
+               "Paikgachha",
+               "Phultala",
+               "Rupsha",
+               "Terokhada",
+               "Khulna City Corporation"
+          ]
+     },
+     {
+          "district": "Kishoreganj",
+          "shippingCharge": 160,
+          "localities": [
+               "Astagram",
+               "Bajitpur",
+               "Bhairab",
+               "Hossainpur",
+               "Itna",
+               "Karimganj",
+               "Katiadi",
+               "Kishoreganj Sadar",
+               "Kuliarchar",
+               "Mithamain",
+               "Nikli",
+               "Pakundia",
+               "Tarail"
+          ]
+     },
+     {
+          "district": "Kurigram",
+          "shippingCharge": 170,
+          "localities": [
+               "Bhurungamari",
+               "Char Rajibpur",
+               "Chilmari",
+               "Kurigram Sadar",
+               "Nageshwari",
+               "Phulbari",
+               "Rajarhat",
+               "Raomari",
+               "Ulipur"
+          ]
+     },
+     {
+          "district": "Kushtia",
+          "shippingCharge": 170,
+          "localities": [
+               "Bheramara",
+               "Daulatpur",
+               "Khoksa",
+               "Kumarkhali",
+               "Kushtia Sadar",
+               "Mirpur"
+          ]
+     },
+     {
+          "district": "Lakshmipur",
+          "shippingCharge": 170,
+          "localities": [
+               "Komol Nagar",
+               "Lakshmipur Sadar",
+               "Raipur",
+               "Ramganj",
+               "Ramgati"
+          ]
+     },
+     {
+          "district": "Lalmonirhat",
+          "shippingCharge": 170,
+          "localities": [
+               "Aditmari",
+               "Hatibandha",
+               "Kaliganj",
+               "Lalmonirhat Sadar",
+               "Patgram"
+          ]
+     },
+     {
+          "district": "Madaripur",
+          "shippingCharge": 160,
+          "localities": ["Kalkini", "Madaripur Sadar", "Rajoir", "Shibchar"]
+     },
+     {
+          "district": "Magura",
+          "shippingCharge": 170,
+          "localities": ["Magura Sadar", "Mohammadpur", "Shalikha", "Sreepur"]
+     },
+     {
+          "district": "Manikganj",
+          "shippingCharge": 140,
+          "localities": [
+               "Daulatpur",
+               "Ghior",
+               "Harirampur",
+               "Manikganj Sadar",
+               "Saturia",
+               "Shibalaya",
+               "Singair"
+          ]
+     },
+     {
+          "district": "Meherpur",
+          "shippingCharge": 170,
+          "localities": ["Gangni", "Meherpur Sadar", "Mujibnagar"]
+     },
+     {
+          "district": "Moulvibazar",
+          "shippingCharge": 170,
+          "localities": [
+               "Barlekha",
+               "Juri",
+               "Kamalganj",
+               "Kulaura",
+               "Moulvibazar Sadar",
+               "Rajnagar",
+               "Sreemangal"
+          ]
+     },
+     {
+          "district": "Munshiganj",
+          "shippingCharge": 140,
+          "localities": [
+               "Gazaria",
+               "Lohajang",
+               "Munshiganj Sadar",
+               "Sirajdikhan",
+               "Sreenagar",
+               "Tongibari"
+          ]
+     },
+     {
+          "district": "Mymensingh",
+          "shippingCharge": 160,
+          "localities": [
+               "Bhaluka",
+               "Dhobaura",
+               "Fulbaria",
+               "Gaffargaon",
+               "Gauripur",
+               "Haluaghat",
+               "Ishwarganj",
+               "Mymensingh Sadar",
+               "Muktagachha",
+               "Nandail",
+               "Phulpur",
+               "Trishal"
+          ]
+     },
+     {
+          "district": "Naogaon",
+          "shippingCharge": 170,
+          "localities": [
+               "Atrai",
+               "Badalgachhi",
+               "Dhamoirhat",
+               "Manda",
+               "Mohadevpur",
+               "Naogaon Sadar",
+               "Niamatpur",
+               "Patnitala",
+               "Porsha",
+               "Raninagar",
+               "Sapahar"
+          ]
+     },
+     {
+          "district": "Narail",
+          "shippingCharge": 170,
+          "localities": ["Kalia", "Lohagara", "Narail Sadar"]
+     },
+     {
+          "district": "Narayanganj",
+          "shippingCharge": 140,
+          "localities": [
+               "Araihazar",
+               "Bandar",
+               "Narayanganj Sadar",
+               "Rupganj",
+               "Sonargaon"
+          ]
+     },
+     {
+          "district": "Narsingdi",
+          "shippingCharge": 140,
+          "localities": [
+               "Belabo",
+               "Monohardi",
+               "Narsingdi Sadar",
+               "Palash",
+               "Raipura",
+               "Shibpur"
+          ]
+     },
+     {
+          "district": "Natore",
+          "shippingCharge": 160,
+          "localities": [
+               "Bagatipara",
+               "Baraigram",
+               "Gurudaspur",
+               "Lalpur",
+               "Natore Sadar",
+               "Singra"
+          ]
+     },
+     {
+          "district": "Netrokona",
+          "shippingCharge": 170,
+          "localities": [
+               "Atpara",
+               "Barhatta",
+               "Durgapur",
+               "Khaliajuri",
+               "Madan",
+               "Mohanganj",
+               "Netrokona Sadar",
+               "Purbadhala",
+               "Kalmakanda"
+          ]
+     },
+     {
+          "district": "Nilphamari",
+          "shippingCharge": 170,
+          "localities": [
+               "Dimla",
+               "Domar",
+               "Jaldhaka",
+               "Kishoreganj",
+               "Nilphamari Sadar",
+               "Saidpur"
+          ]
+     },
+     {
+          "district": "Noakhali",
+          "shippingCharge": 170,
+          "localities": [
+               "Begumganj",
+               "Chatkhil",
+               "Companiganj",
+               "Hatiya",
+               "Kabirhat",
+               "Noakhali Sadar",
+               "Senbagh",
+               "Subarnachar"
+          ]
+     },
+     {
+          "district": "Pabna",
+          "shippingCharge": 180,
+          "localities": [
+               "Atgharia",
+               "Bera",
+               "Bhangura",
+               "Chatmohar",
+               "Faridpur",
+               "Ishwardi",
+               "Pabna Sadar",
+               "Santhia",
+               "Sujanagar"
+          ]
+     },
+     {
+          "district": "Panchagarh",
+          "shippingCharge": 170,
+          "localities": [
+               "Atwari",
+               "Boda",
+               "Debiganj",
+               "Panchagarh Sadar",
+               "Tetulia"
+          ]
+     },
+     {
+          "district": "Patuakhali",
+          "shippingCharge": 170,
+          "localities": [
+               "Bauphal",
+               "Dashmina",
+               "Dumki",
+               "Galachipa",
+               "Kalapara",
+               "Mirzaganj",
+               "Patuakhali Sadar",
+               "Rangabali"
+          ]
+     },
+     {
+          "district": "Pirojpur",
+          "shippingCharge": 170,
+          "localities": [
+               "Bhandaria",
+               "Kawkhali",
+               "Mathbaria",
+               "Nazirpur",
+               "Nesarabad",
+               "Pirojpur Sadar",
+               "Zianagar"
+          ]
+     },
+     {
+          "district": "Rajbari",
+          "shippingCharge": 160,
+          "localities": [
+               "Baliakandi",
+               "Goalandaghat",
+               "Kalukhali",
+               "Pangsha",
+               "Rajbari Sadar"
+          ]
+     },
+     {
+          "district": "Rajshahi",
+          "shippingCharge": 180,
+          "localities": [
+               "Bagha",
+               "Bagmara",
+               "Charghat",
+               "Durgapur",
+               "Godagari",
+               "Mohanpur",
+               "Paba",
+               "Puthia",
+               "Tanore"
+          ]
+     },
+     {
+          "district": "Rangamati",
+          "shippingCharge": 200,
+          "localities": [
+               "Baghaichhari",
+               "Barkal",
+               "Kawkhali",
+               "Belaichhari",
+               "Kaptai",
+               "Juraichhari",
+               "Langadu",
+               "Naniarchar",
+               "Rajasthali",
+               "Rangamati Sadar"
+          ]
+     },
+     {
+          "district": "Rangpur",
+          "shippingCharge": 180,
+          "localities": [
+               "Badarganj",
+               "Gangachara",
+               "Kaunia",
+               "Rangpur Sadar",
+               "Mithapukur",
+               "Taraganj",
+               "Pirgachha",
+               "Pirganj"
+          ]
+     },
+     {
+          "district": "Satkhira",
+          "shippingCharge": 180,
+          "localities": [
+               "Assasuni",
+               "Debhata",
+               "Kalaroa",
+               "Kaliganj",
+               "Satkhira Sadar",
+               "Shyamnagar",
+               "Tala"
+          ]
+     },
+     {
+          "district": "Shariatpur",
+          "shippingCharge": 170,
+          "localities": [
+               "Bhedarganj",
+               "Damudya",
+               "Gosairhat",
+               "Jajira",
+               "Naria",
+               "Shariatpur Sadar"
+          ]
+     },
+     {
+          "district": "Sherpur",
+          "shippingCharge": 170,
+          "localities": [
+               "Jhenaigati",
+               "Nakla",
+               "Nalitabari",
+               "Sherpur Sadar",
+               "Sreebardi"
+          ]
+     },
+     {
+          "district": "Sirajganj",
+          "shippingCharge": 170,
+          "localities": [
+               "Belkuchi",
+               "Chauhali",
+               "Kamarkhanda",
+               "Kazipur",
+               "Raiganj",
+               "Shahjadpur",
+               "Sirajganj Sadar",
+               "Tarash",
+               "Ullapara"
+          ]
+     },
+     {
+          "district": "Sunamganj",
+          "shippingCharge": 200,
+          "localities": [
+               "Bishwamvarpur",
+               "Chhatak",
+               "Dakhin Sunamganj",
+               "Derai",
+               "Dharampasha",
+               "Dowarabazar",
+               "Jagannathpur",
+               "Jamalganj",
+               "Sullah",
+               "Sunamganj Sadar",
+               "Tahirpur"
+          ]
+     },
+     {
+          "district": "Sylhet",
+          "shippingCharge": 170,
+          "localities": [
+               "Balaganj",
+               "Beanibazar",
+               "Bishwanath",
+               "Companiganj",
+               "Dakshin Surma",
+               "Fenchuganj",
+               "Golapganj",
+               "Gowainghat",
+               "Jaintiapur",
+               "Kanaighat",
+               "Sylhet Sadar",
+               "Zakiganj"
+          ]
+     },
+     {
+          "district": "Tangail",
+          "shippingCharge": 160,
+          "localities": [
+               "Basail",
+               "Bhuapur",
+               "Delduar",
+               "Dhanbari",
+               "Ghatail",
+               "Gopalpur",
+               "Kalihati",
+               "Madhupur",
+               "Mirzapur",
+               "Nagarpur",
+               "Sakhipur",
+               "Tangail Sadar"
+          ]
+     },
+     {
+          "district": "Thakurgaon",
+          "shippingCharge": 170,
+          "localities": [
+               "Baliadangi",
+               "Haripur",
+               "Pirganj",
+               "Ranisankail",
+               "Thakurgaon Sadar"
+          ]
+     }
+]

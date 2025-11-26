@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const InitialCart = () => {
      return (
-          <div className="flex flex-col justify-center items-center h-full">
+          <div className="flex flex-col justify-center items-center h-full mt-30">
                <IoCartOutline className="text-6xl" />
                <p className="text-3xl font-bold my-3">Your Cart is empty.</p>
                <Link

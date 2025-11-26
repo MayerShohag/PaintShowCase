@@ -24,7 +24,6 @@ const Post = () => {
      const [location, setLocation] = useState({});
      const dateTime = new Date();
 
-     // location
      useEffect(() => {
           navigator.geolocation.getCurrentPosition(async (position) => {
                let latitute = position.coords.latitude;
@@ -89,7 +88,7 @@ const Post = () => {
           setPaintTitle("");
           setPaintURL(null);
           setPaintCategory("");
-          setPaintPrice("");
+          setPaintPrice(0);
           setPaintSize("");
           setPaintDescription("");
           setPaintMedium("");
@@ -100,7 +99,7 @@ const Post = () => {
           setPaintDateAge("");
           setPaintShipping("");
           setPaintTags("");
-          setPaintCreateYear("");
+          setPaintCreateYear(0);
           setIsStock(null);
      };
 

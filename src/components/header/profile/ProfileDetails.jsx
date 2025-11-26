@@ -26,12 +26,10 @@ import { PiTiktokLogo } from "react-icons/pi";
 import { RiAccountBoxFill, RiTwitterXFill } from "react-icons/ri";
 import { Link } from "react-router";
 import { LoginContext } from "../../../contexts/ProfileContext";
-import { OwnContext } from "../../../contexts/Context";
 
 const ProfileDetails = ({ handleLogout }) => {
      const { user } = useContext(LoginContext);
      const [showText, setShowText] = useState(false);
-     const { showModal, setShowModal } = useContext(OwnContext);
      return (
           <div className="grid grid-cols-12 gap-5 md:my-5 mb-20 md:px-2 lg:px-0 max-w-[1014px] min-h-screen container mx-auto">
                <div className="hidden h-fit md:block md:col-span-4 lg:col-span-4 col-span-5 border border-gray-700 rounded-2xl p-2">
